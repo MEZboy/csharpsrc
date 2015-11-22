@@ -23,12 +23,8 @@ namespace _3d
         private Form4 f4 = new Form4();
         private Page4Form pf4 = new Page4Form();
 
-<<<<<<< HEAD
         private one11xuan5 o11_1 = new one11xuan5();
         private two11xuan5 o11_2 = new two11xuan5();
-=======
-        private one11xuan5 o11 = new one11xuan5();
->>>>>>> parent of a8ff89f... 
 
         private OutputForm f2 = null;
         
@@ -218,21 +214,17 @@ namespace _3d
 
             get11Data();
         }
-        //十一选五按钮点击
+
+        //十一选五清空按钮点击
         private void clearButton_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             o11_1.clearCheckbox();
             o11_2.clearCheckbox();
         }
-=======
->>>>>>> parent of a8ff89f... 
 
-        }
         //十一选五最终生成
         private void get11Data()
         {
-<<<<<<< HEAD
             List<string> li = new List<string>();
             li = o11_1.sendData();
             li = o11_2.sendData(li);
@@ -247,9 +239,6 @@ namespace _3d
                 res = res.Substring(0, res.Length - 1);
             }
 
-=======
-            string res = o11.sendData();
->>>>>>> parent of a8ff89f... 
             int countNum = res.Split('\n').Length;
             if (res == "")
             {
@@ -258,28 +247,11 @@ namespace _3d
             }
             try { f2.Text = "共计  " + countNum + "   注,当前运算结果为 十一选五"; f2.textBox1.Text = res; }
             catch { f2.Text = "出错"; f2.textBox1.Text = "运算出错，请您检查您设置的条件！"; }
+            f2.zhiZhuanZu.Visible = false;//十一选五禁用“直选转组选”按钮
+            f2.button1.Location = new Point(f2.button1.Location.X + 95, f2.button1.Location.Y);//把“复制”按钮右移至中央
             f2.Show();
         }
 
-<<<<<<< HEAD
-=======
-        private void changeMainPanelCbx_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (changeMainPanelCbx.SelectedIndex == 0)
-            {
-                if (o11 != null)
-                {
-                    o11.FormBorderStyle = FormBorderStyle.None; // 无边框
-                    o11.TopLevel = false; // 不是最顶层窗体
-                    mainPanel.Controls.Add(o11);  // 添加到 Panel中
-                    //f3.Hide();
-                    //f4.Hide();
-                    o11.Show();
-                }
-            }
-        }
-
->>>>>>> parent of a8ff89f... 
         //清内存
         private void timer3_Tick(object sender, EventArgs e)
         {
