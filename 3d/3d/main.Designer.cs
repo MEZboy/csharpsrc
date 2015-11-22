@@ -275,6 +275,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(904, 540);
             this.tabPage3.TabIndex = 2;
+<<<<<<< HEAD
             this.tabPage3.Text = "十一选五 - 十一运夺金";
             // 
             // pageTwoBtn
@@ -306,6 +307,9 @@
             this.pageOneBtn.UseVisualStyleBackColor = false;
             this.pageOneBtn.Click += new System.EventHandler(this.pageOneBtn_Click);
             this.pageOneBtn.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pageOneBtn_MouseMove);
+=======
+            this.tabPage3.Text = "十一选五";
+>>>>>>> parent of a8ff89f... 
             // 
             // marqueePanel
             // 
@@ -352,6 +356,25 @@
             this.mainPanel.Size = new System.Drawing.Size(906, 459);
             this.mainPanel.TabIndex = 26;
             // 
+<<<<<<< HEAD
+=======
+            // changeMainPanelCbx
+            // 
+            this.changeMainPanelCbx.BackColor = System.Drawing.Color.YellowGreen;
+            this.changeMainPanelCbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.changeMainPanelCbx.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.changeMainPanelCbx.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.changeMainPanelCbx.ForeColor = System.Drawing.Color.DarkBlue;
+            this.changeMainPanelCbx.FormattingEnabled = true;
+            this.changeMainPanelCbx.Items.AddRange(new object[] {
+            "页面一   -   基础选项    -   杀码,出号,分解式,临码,组合,凹凸,密码修改,信息修改"});
+            this.changeMainPanelCbx.Location = new System.Drawing.Point(6, 56);
+            this.changeMainPanelCbx.Name = "changeMainPanelCbx";
+            this.changeMainPanelCbx.Size = new System.Drawing.Size(895, 25);
+            this.changeMainPanelCbx.TabIndex = 27;
+            this.changeMainPanelCbx.SelectedIndexChanged += new System.EventHandler(this.changeMainPanelCbx_SelectedIndexChanged);
+            // 
+>>>>>>> parent of a8ff89f... 
             // clearButton
             // 
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
