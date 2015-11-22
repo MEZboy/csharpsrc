@@ -57,13 +57,16 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bankAccount = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Location = new System.Drawing.Point(302, 164);
+            this.label20.Location = new System.Drawing.Point(302, 190);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(107, 12);
             this.label20.TabIndex = 51;
@@ -73,7 +76,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Location = new System.Drawing.Point(302, 136);
+            this.label19.Location = new System.Drawing.Point(302, 162);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(101, 12);
             this.label19.TabIndex = 50;
@@ -81,7 +84,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(158, 158);
+            this.textBox10.Location = new System.Drawing.Point(158, 184);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(132, 21);
             this.textBox10.TabIndex = 48;
@@ -91,7 +94,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(31, 158);
+            this.label18.Location = new System.Drawing.Point(31, 184);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(81, 21);
             this.label18.TabIndex = 49;
@@ -99,7 +102,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(158, 131);
+            this.textBox9.Location = new System.Drawing.Point(158, 157);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(132, 21);
             this.textBox9.TabIndex = 46;
@@ -109,7 +112,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(31, 131);
+            this.label17.Location = new System.Drawing.Point(31, 157);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(81, 21);
             this.label17.TabIndex = 47;
@@ -122,7 +125,7 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(274, 240);
+            this.button2.Location = new System.Drawing.Point(274, 266);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(68, 29);
             this.button2.TabIndex = 39;
@@ -134,7 +137,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Location = new System.Drawing.Point(390, 191);
+            this.label15.Location = new System.Drawing.Point(390, 217);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(137, 12);
             this.label15.TabIndex = 45;
@@ -144,7 +147,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(302, 107);
+            this.label14.Location = new System.Drawing.Point(302, 133);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(257, 12);
             this.label14.TabIndex = 44;
@@ -175,7 +178,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(358, 185);
+            this.label9.Location = new System.Drawing.Point(358, 211);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 21);
             this.label9.TabIndex = 41;
@@ -183,7 +186,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(274, 185);
+            this.textBox6.Location = new System.Drawing.Point(274, 211);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(78, 21);
             this.textBox6.TabIndex = 36;
@@ -194,7 +197,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(242, 185);
+            this.label8.Location = new System.Drawing.Point(242, 211);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(26, 21);
             this.label8.TabIndex = 40;
@@ -202,7 +205,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(158, 185);
+            this.textBox7.Location = new System.Drawing.Point(158, 211);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(78, 21);
             this.textBox7.TabIndex = 35;
@@ -213,7 +216,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(31, 185);
+            this.label7.Location = new System.Drawing.Point(31, 217);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 21);
             this.label7.TabIndex = 37;
@@ -222,7 +225,7 @@
             // textBox5
             // 
             this.textBox5.ImeMode = System.Windows.Forms.ImeMode.Hangul;
-            this.textBox5.Location = new System.Drawing.Point(158, 104);
+            this.textBox5.Location = new System.Drawing.Point(158, 130);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(132, 21);
             this.textBox5.TabIndex = 33;
@@ -233,7 +236,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(31, 104);
+            this.label5.Location = new System.Drawing.Point(31, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 21);
             this.label5.TabIndex = 38;
@@ -303,7 +306,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label21.Location = new System.Drawing.Point(31, 211);
+            this.label21.Location = new System.Drawing.Point(31, 237);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(106, 21);
             this.label21.TabIndex = 63;
@@ -314,7 +317,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton1.Location = new System.Drawing.Point(158, 212);
+            this.radioButton1.Location = new System.Drawing.Point(158, 238);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(41, 24);
             this.radioButton1.TabIndex = 64;
@@ -327,7 +330,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton2.Location = new System.Drawing.Point(199, 212);
+            this.radioButton2.Location = new System.Drawing.Point(199, 238);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(41, 24);
             this.radioButton2.TabIndex = 65;
@@ -345,13 +348,45 @@
             this.label6.TabIndex = 66;
             this.label6.Text = "为空则不设置";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(360, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 12);
+            this.label2.TabIndex = 69;
+            this.label2.Text = "*确保提现成功";
+            // 
+            // bankAccount
+            // 
+            this.bankAccount.Location = new System.Drawing.Point(158, 104);
+            this.bankAccount.MaxLength = 19;
+            this.bankAccount.Name = "bankAccount";
+            this.bankAccount.Size = new System.Drawing.Size(196, 21);
+            this.bankAccount.TabIndex = 67;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label22.Location = new System.Drawing.Point(31, 104);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(74, 21);
+            this.label22.TabIndex = 68;
+            this.label22.Text = "银行账号";
+            // 
             // ModifyInfoByAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(623, 284);
+            this.ClientSize = new System.Drawing.Size(623, 323);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.bankAccount);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -423,5 +458,8 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox bankAccount;
+        private System.Windows.Forms.Label label22;
     }
 }

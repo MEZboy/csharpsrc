@@ -24,6 +24,7 @@ namespace _3d
         private Page4Form pf4 = new Page4Form();
 
         private one11xuan5 o11_1 = new one11xuan5();
+        private two11xuan5 o11_2 = new two11xuan5();
 
         private OutputForm f2 = null;
         
@@ -218,12 +219,26 @@ namespace _3d
         private void clearButton_Click(object sender, EventArgs e)
         {
             o11_1.clearCheckbox();
+            o11_2.clearCheckbox();
         }
 
         //十一选五最终生成
         private void get11Data()
         {
-            string res = o11_1.sendData();
+            List<string> li = new List<string>();
+            li = o11_1.sendData();
+            li = o11_2.sendData(li);
+
+            string res = "";
+            for (int i = 0; i < li.Count; i++)
+            {
+                res += (li[i] + "\r\n");
+            }
+            if (res.Length != 0)
+            {
+                res = res.Substring(0, res.Length - 1);
+            }
+
             int countNum = res.Split('\n').Length;
             if (res == "")
             {
@@ -235,22 +250,6 @@ namespace _3d
             f2.zhiZhuanZu.Visible = false;//十一选五禁用“直选转组选”按钮
             f2.button1.Location = new Point(f2.button1.Location.X + 95, f2.button1.Location.Y);//把“复制”按钮右移至中央
             f2.Show();
-        }
-
-        private void changeMainPanelCbx_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (changeMainPanelCbx.SelectedIndex == 0)
-            {
-                if (o11_1 != null)
-                {
-                    o11_1.FormBorderStyle = FormBorderStyle.None; // 无边框
-                    o11_1.TopLevel = false; // 不是最顶层窗体
-                    mainPanel.Controls.Add(o11_1);  // 添加到 Panel中
-                    //f3.Hide();
-                    //f4.Hide();
-                    o11_1.Show();
-                }
-            }
         }
 
         //清内存
@@ -265,6 +264,9 @@ namespace _3d
         private string changeButton2Text = "两码和,两码差,和值";
         private string changeButton3Text = "合值,杀合值,跨距(跨度),差合,龙头凤尾,号码属性,平衡指数";
         private string changeButton4Text = "东北专供：两码差、两位数组胆、走势图";
+
+        private string changeButton1TextFor11x5 = "出号,偶数,合数,小数,连号,平衡,号码配置";
+        private string changeButton2TextFor11x5 = "必下两码,和值,跨度,最大邻码跨距,反边球,边临和,龙头凤尾,合值,临码和,任意两码差";
         Font changeButtonFont = new Font("微软雅黑", 13.0F, FontStyle.Regular);
 
         private void main_Load(object sender, EventArgs e)
@@ -290,7 +292,6 @@ namespace _3d
             timer3.Enabled = true;
 
             //将tabpage隐藏
-            //customTabControl1.TabPages[1].Parent = null;
 
             //启动下线机制
             //如30分钟 30 * 60 *1000=1800000
@@ -310,8 +311,8 @@ namespace _3d
             EnableDoubleBuffering();//启用双缓冲
             this.label8.Text = Global.main_msg;//获取时时彩界面跑马灯文字信息
             this.marqueeLabel.Text = Global.main_msg;//获取时时彩界面跑马灯文字信息
-            this.changeButton1_Click(null, null);
-            this.changeMainPanelCbx.SelectedIndex = 0;//将十一选五选项卡切到第一个页面
+            this.changeButton1_Click(null, null);//触发时时彩的按钮1事件，为了将page添加进框体
+            this.pageOneBtn_Click(null, null);//触发十一选五的按钮1事件，为了将page添加进框体
 
             // Set up the delays for the ToolTip.   
             changeButtonToolTip.OwnerDraw = true;
@@ -323,10 +324,15 @@ namespace _3d
             changeButtonToolTip.SetToolTip(this.changeButton2, changeButton2Text);  //绑定tooltip到控件
             changeButtonToolTip.SetToolTip(this.changeButton3, changeButton3Text);  //绑定tooltip到控件
             changeButtonToolTip.SetToolTip(this.changeButton4, changeButton4Text);  //绑定tooltip到控件
+            changeButtonToolTip.SetToolTip(this.pageOneBtn, changeButton1TextFor11x5);  //绑定tooltip到控件
+            changeButtonToolTip.SetToolTip(this.pageTwoBtn, changeButton2TextFor11x5);  //绑定tooltip到控件
 
             //走势图页面WebBrowser
             string url = Global.soft_server_url + "/ZstNavigate.html?t=" + DateTime.Now.Ticks;//用随机数防止IE缓存
             this.zstWebBrowser.Navigate(new System.Uri(url, System.UriKind.Absolute));
+
+            //倍投计算器页面
+            loadBeiTouCal();
         }
 
         private void changeButton1_MouseMove(object sender, MouseEventArgs e)
@@ -629,7 +635,7 @@ namespace _3d
         }
 
         /// <summary>
-        /// 进行隐藏或者显示form
+        /// 进行时时彩隐藏或者显示form
         /// </summary>
         /// <param name="f"></param>
         private void pageHideOrShow(Form f, Button btn)
@@ -669,6 +675,83 @@ namespace _3d
             e.Cancel = true;
             string currentUri = ((WebBrowser)sender).Document.ActiveElement.GetAttribute("href");
             System.Diagnostics.Process.Start(currentUri);
+        }
+
+        private void pageOneBtn_Click(object sender, EventArgs e)
+        {
+            if (o11_1 != null)
+            {
+                o11_1.FormBorderStyle = FormBorderStyle.None; // 无边框
+                o11_1.TopLevel = false; // 不是最顶层窗体
+                mainPanel.Controls.Add(o11_1);  // 添加到 Panel中
+                pageHideOrShowFor11x5(o11_1, pageOneBtn);
+            }
+
+            mainPanel.Focus();
+        }
+
+        private void pageTwoBtn_Click(object sender, EventArgs e)
+        {
+            if (o11_2 != null)
+            {
+                o11_2.FormBorderStyle = FormBorderStyle.None; // 无边框
+                o11_2.TopLevel = false; // 不是最顶层窗体
+                mainPanel.Controls.Add(o11_2);  // 添加到 Panel中
+                pageHideOrShowFor11x5(o11_2, pageTwoBtn);
+            }
+
+            mainPanel.Focus();
+        }
+
+        /// <summary>
+        /// 进行十一选5隐藏或者显示form
+        /// </summary>
+        /// <param name="f"></param>
+        private void pageHideOrShowFor11x5(Form f, Button btn)
+        {
+            //切换Form
+            Form[] forms = { o11_1, o11_2 };
+            foreach (Form _f in forms)
+            {
+                if (_f.Equals(f))
+                {
+                    _f.Show();
+                    continue;
+                }
+                _f.Hide();
+            }
+
+            //给切换Form的按钮换色
+            Button[] btns = { pageOneBtn, pageTwoBtn };
+            foreach (Button _btn in btns)
+            {
+                if (_btn.Equals(btn))
+                {
+                    _btn.BackColor = _changeButtonColorFocus;
+                    continue;
+                }
+                _btn.BackColor = _changeButtonColor;
+            }
+        }
+
+        private void pageOneBtn_MouseMove(object sender, MouseEventArgs e)
+        {
+            changeButtonText = changeButton1TextFor11x5;
+        }
+
+        private void pageTwoBtn_MouseMove(object sender, MouseEventArgs e)
+        {
+            changeButtonText = changeButton2TextFor11x5;
+        }
+
+        /// <summary>
+        /// 载入倍投计算器
+        /// </summary>
+        private void loadBeiTouCal()
+        {
+            ColumnHeader ch = new ColumnHeader();
+
+
         }
     }
 }

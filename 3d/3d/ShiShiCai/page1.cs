@@ -40,7 +40,7 @@ namespace _3d
                     {
                         if (ckb is CheckBox || ckb is Label || ckb is TextBox || ckb is Button)
                         {
-                            if (ckb != linMaShaQuCbx)
+                            if (ckb != linMaShaQuCbx && ckb != kuaiSanBtn)
                                 ckb.ForeColor = Color.Black;
                         }
                         if (ckb is GroupBox)
@@ -2281,7 +2281,7 @@ namespace _3d
         //0
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
+            if (kuaiSan0.Checked)
             {
                 checkBox20.Enabled = false;
                 checkBox33.Enabled = false;
@@ -2512,7 +2512,7 @@ namespace _3d
         //7
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox8.Checked)
+            if (kuaiSan7.Checked)
             {
                 checkBox14.Enabled = false;
                 checkBox27.Enabled = false;
@@ -2545,7 +2545,7 @@ namespace _3d
         //8
         private void checkBox9_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox9.Checked)
+            if (kuaiSan8.Checked)
             {
                 checkBox15.Enabled = false;
                 checkBox28.Enabled = false;
@@ -2578,7 +2578,7 @@ namespace _3d
         //9
         private void checkBox10_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox10.Checked)
+            if (kuaiSan9.Checked)
             {
                 checkBox12.Enabled = false;
                 checkBox25.Enabled = false;
@@ -3320,6 +3320,14 @@ namespace _3d
                     (ctl as CheckBox).Checked = false;
                 }
             }
+        }
+
+        private void kuaiSanBtn_Click(object sender, EventArgs e)
+        {
+            this.kuaiSan0.Checked = true;
+            this.kuaiSan7.Checked = true;
+            this.kuaiSan8.Checked = true;
+            this.kuaiSan9.Checked = true;
         }
     }
 }

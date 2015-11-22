@@ -32,15 +32,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.clearShaHaoBtn = new System.Windows.Forms.Button();
             this.checkBox6 = new _3d.CusCheckBox();
-            this.checkBox10 = new _3d.CusCheckBox();
+            this.kuaiSan9 = new _3d.CusCheckBox();
             this.checkBox7 = new _3d.CusCheckBox();
-            this.checkBox8 = new _3d.CusCheckBox();
-            this.checkBox9 = new _3d.CusCheckBox();
+            this.kuaiSan7 = new _3d.CusCheckBox();
+            this.kuaiSan8 = new _3d.CusCheckBox();
             this.checkBox5 = new _3d.CusCheckBox();
             this.checkBox4 = new _3d.CusCheckBox();
             this.checkBox3 = new _3d.CusCheckBox();
             this.checkBox2 = new _3d.CusCheckBox();
-            this.checkBox1 = new _3d.CusCheckBox();
+            this.kuaiSan0 = new _3d.CusCheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.clear1HaoMaZubtn = new System.Windows.Forms.Button();
             this.checkBox11 = new _3d.CusCheckBox();
@@ -205,6 +205,8 @@
             this.shengCbx = new _3d.CusCheckBox();
             this.tuCbx = new _3d.CusCheckBox();
             this.aoCbx = new _3d.CusCheckBox();
+            this.kuaiSanBtn = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.fjsGpb.SuspendLayout();
@@ -225,24 +227,25 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox1.Controls.Add(this.kuaiSanBtn);
             this.groupBox1.Controls.Add(this.clearShaHaoBtn);
             this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox10);
+            this.groupBox1.Controls.Add(this.kuaiSan9);
             this.groupBox1.Controls.Add(this.checkBox7);
-            this.groupBox1.Controls.Add(this.checkBox8);
-            this.groupBox1.Controls.Add(this.checkBox9);
+            this.groupBox1.Controls.Add(this.kuaiSan7);
+            this.groupBox1.Controls.Add(this.kuaiSan8);
             this.groupBox1.Controls.Add(this.checkBox5);
             this.groupBox1.Controls.Add(this.checkBox4);
             this.groupBox1.Controls.Add(this.checkBox3);
             this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.kuaiSan0);
             this.groupBox1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.Location = new System.Drawing.Point(516, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(383, 52);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "平面走势图杀号 —— 勾选0789即为快3";
+            this.groupBox1.Text = "号码绝杀";
             // 
             // clearShaHaoBtn
             // 
@@ -251,7 +254,7 @@
             this.clearShaHaoBtn.Name = "clearShaHaoBtn";
             this.clearShaHaoBtn.Size = new System.Drawing.Size(64, 23);
             this.clearShaHaoBtn.TabIndex = 60;
-            this.clearShaHaoBtn.Text = "清空";
+            this.clearShaHaoBtn.Text = "清";
             this.clearShaHaoBtn.UseVisualStyleBackColor = true;
             this.clearShaHaoBtn.Click += new System.EventHandler(this.clearShaHaoBtn_Click);
             // 
@@ -269,19 +272,19 @@
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
-            // checkBox10
+            // kuaiSan9
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox10.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox10.Location = new System.Drawing.Point(340, 22);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(36, 24);
-            this.checkBox10.TabIndex = 6;
-            this.checkBox10.Text = "9";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
+            this.kuaiSan9.AutoSize = true;
+            this.kuaiSan9.checkBgColor = System.Drawing.Color.Empty;
+            this.kuaiSan9.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.kuaiSan9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.kuaiSan9.Location = new System.Drawing.Point(340, 22);
+            this.kuaiSan9.Name = "kuaiSan9";
+            this.kuaiSan9.Size = new System.Drawing.Size(36, 24);
+            this.kuaiSan9.TabIndex = 6;
+            this.kuaiSan9.Text = "9";
+            this.kuaiSan9.UseVisualStyleBackColor = true;
+            this.kuaiSan9.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -297,33 +300,33 @@
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
-            // checkBox8
+            // kuaiSan7
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox8.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox8.Location = new System.Drawing.Point(268, 22);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(36, 24);
-            this.checkBox8.TabIndex = 8;
-            this.checkBox8.Text = "7";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
+            this.kuaiSan7.AutoSize = true;
+            this.kuaiSan7.checkBgColor = System.Drawing.Color.Empty;
+            this.kuaiSan7.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.kuaiSan7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.kuaiSan7.Location = new System.Drawing.Point(268, 22);
+            this.kuaiSan7.Name = "kuaiSan7";
+            this.kuaiSan7.Size = new System.Drawing.Size(36, 24);
+            this.kuaiSan7.TabIndex = 8;
+            this.kuaiSan7.Text = "7";
+            this.kuaiSan7.UseVisualStyleBackColor = true;
+            this.kuaiSan7.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
-            // checkBox9
+            // kuaiSan8
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox9.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox9.Location = new System.Drawing.Point(304, 22);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(36, 24);
-            this.checkBox9.TabIndex = 7;
-            this.checkBox9.Text = "8";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
+            this.kuaiSan8.AutoSize = true;
+            this.kuaiSan8.checkBgColor = System.Drawing.Color.Empty;
+            this.kuaiSan8.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.kuaiSan8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.kuaiSan8.Location = new System.Drawing.Point(304, 22);
+            this.kuaiSan8.Name = "kuaiSan8";
+            this.kuaiSan8.Size = new System.Drawing.Size(36, 24);
+            this.kuaiSan8.TabIndex = 7;
+            this.kuaiSan8.Text = "8";
+            this.kuaiSan8.UseVisualStyleBackColor = true;
+            this.kuaiSan8.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -381,22 +384,23 @@
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // checkBox1
+            // kuaiSan0
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.checkBgColor = System.Drawing.Color.Empty;
-            this.checkBox1.CheckColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.checkBox1.Location = new System.Drawing.Point(16, 22);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(36, 24);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "0";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.kuaiSan0.AutoSize = true;
+            this.kuaiSan0.checkBgColor = System.Drawing.Color.Empty;
+            this.kuaiSan0.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.kuaiSan0.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.kuaiSan0.Location = new System.Drawing.Point(16, 22);
+            this.kuaiSan0.Name = "kuaiSan0";
+            this.kuaiSan0.Size = new System.Drawing.Size(36, 24);
+            this.kuaiSan0.TabIndex = 1;
+            this.kuaiSan0.Text = "0";
+            this.kuaiSan0.UseVisualStyleBackColor = true;
+            this.kuaiSan0.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.clear1HaoMaZubtn);
             this.groupBox2.Controls.Add(this.checkBox11);
             this.groupBox2.Controls.Add(this.checkBox12);
@@ -424,11 +428,11 @@
             // clear1HaoMaZubtn
             // 
             this.clear1HaoMaZubtn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.clear1HaoMaZubtn.Location = new System.Drawing.Point(432, 1);
+            this.clear1HaoMaZubtn.Location = new System.Drawing.Point(436, 1);
             this.clear1HaoMaZubtn.Name = "clear1HaoMaZubtn";
             this.clear1HaoMaZubtn.Size = new System.Drawing.Size(64, 23);
             this.clear1HaoMaZubtn.TabIndex = 56;
-            this.clear1HaoMaZubtn.Text = "清空";
+            this.clear1HaoMaZubtn.Text = "清";
             this.clear1HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear1HaoMaZubtn.Click += new System.EventHandler(this.clear1HaoMaZubtn_Click);
             // 
@@ -1272,11 +1276,11 @@
             // clear4HaoMaZubtn
             // 
             this.clear4HaoMaZubtn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.clear4HaoMaZubtn.Location = new System.Drawing.Point(432, -1);
+            this.clear4HaoMaZubtn.Location = new System.Drawing.Point(436, -1);
             this.clear4HaoMaZubtn.Name = "clear4HaoMaZubtn";
             this.clear4HaoMaZubtn.Size = new System.Drawing.Size(64, 23);
             this.clear4HaoMaZubtn.TabIndex = 59;
-            this.clear4HaoMaZubtn.Text = "清空";
+            this.clear4HaoMaZubtn.Text = "清";
             this.clear4HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear4HaoMaZubtn.Click += new System.EventHandler(this.clear4HaoMaZubtn_Click);
             // 
@@ -1504,11 +1508,11 @@
             // clear3HaoMaZubtn
             // 
             this.clear3HaoMaZubtn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.clear3HaoMaZubtn.Location = new System.Drawing.Point(432, -1);
+            this.clear3HaoMaZubtn.Location = new System.Drawing.Point(436, -1);
             this.clear3HaoMaZubtn.Name = "clear3HaoMaZubtn";
             this.clear3HaoMaZubtn.Size = new System.Drawing.Size(64, 23);
             this.clear3HaoMaZubtn.TabIndex = 58;
-            this.clear3HaoMaZubtn.Text = "清空";
+            this.clear3HaoMaZubtn.Text = "清";
             this.clear3HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear3HaoMaZubtn.Click += new System.EventHandler(this.clear3HaoMaZubtn_Click);
             // 
@@ -1736,11 +1740,11 @@
             // clear2HaoMaZubtn
             // 
             this.clear2HaoMaZubtn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.clear2HaoMaZubtn.Location = new System.Drawing.Point(432, -1);
+            this.clear2HaoMaZubtn.Location = new System.Drawing.Point(436, -1);
             this.clear2HaoMaZubtn.Name = "clear2HaoMaZubtn";
             this.clear2HaoMaZubtn.Size = new System.Drawing.Size(64, 23);
             this.clear2HaoMaZubtn.TabIndex = 57;
-            this.clear2HaoMaZubtn.Text = "清空";
+            this.clear2HaoMaZubtn.Text = "清";
             this.clear2HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear2HaoMaZubtn.Click += new System.EventHandler(this.clear2HaoMaZubtn_Click);
             // 
@@ -2492,6 +2496,28 @@
             this.aoCbx.Text = "凹";
             this.aoCbx.UseVisualStyleBackColor = true;
             // 
+            // kuaiSanBtn
+            // 
+            this.kuaiSanBtn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.kuaiSanBtn.ForeColor = System.Drawing.Color.Red;
+            this.kuaiSanBtn.Location = new System.Drawing.Point(240, 1);
+            this.kuaiSanBtn.Name = "kuaiSanBtn";
+            this.kuaiSanBtn.Size = new System.Drawing.Size(64, 23);
+            this.kuaiSanBtn.TabIndex = 61;
+            this.kuaiSanBtn.Text = "快三";
+            this.kuaiSanBtn.UseVisualStyleBackColor = true;
+            this.kuaiSanBtn.Click += new System.EventHandler(this.kuaiSanBtn_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(358, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 17);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "出0,1安全杀";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2553,16 +2579,16 @@
 
         #endregion
 
-        public CusCheckBox checkBox1;
+        public CusCheckBox kuaiSan0;
         public CusCheckBox checkBox2;
         public CusCheckBox checkBox3;
         public CusCheckBox checkBox4;
         public CusCheckBox checkBox5;
         public CusCheckBox checkBox6;
         public CusCheckBox checkBox7;
-        public CusCheckBox checkBox8;
-        public CusCheckBox checkBox9;
-        public CusCheckBox checkBox10;
+        public CusCheckBox kuaiSan7;
+        public CusCheckBox kuaiSan8;
+        public CusCheckBox kuaiSan9;
         public System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.GroupBox groupBox2;
         public CusCheckBox checkBox11;
@@ -2729,6 +2755,8 @@
         private System.Windows.Forms.Button clear3HaoMaZubtn;
         private System.Windows.Forms.Button clear2HaoMaZubtn;
         private System.Windows.Forms.Button clearShaHaoBtn;
+        private System.Windows.Forms.Button kuaiSanBtn;
+        public System.Windows.Forms.Label label5;
     }
 }
 

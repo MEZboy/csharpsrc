@@ -114,11 +114,102 @@
             this.label4 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.ouShuGpb = new System.Windows.Forms.GroupBox();
+            this.cusCheckBox3 = new _3d.CusCheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cusCheckBox5 = new _3d.CusCheckBox();
+            this.cusCheckBox10 = new _3d.CusCheckBox();
+            this.cusCheckBox11 = new _3d.CusCheckBox();
+            this.cusCheckBox12 = new _3d.CusCheckBox();
+            this.cusCheckBox13 = new _3d.CusCheckBox();
+            this.heShuGpb = new System.Windows.Forms.GroupBox();
+            this.cusCheckBox1 = new _3d.CusCheckBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.cusCheckBox2 = new _3d.CusCheckBox();
+            this.cusCheckBox4 = new _3d.CusCheckBox();
+            this.cusCheckBox6 = new _3d.CusCheckBox();
+            this.cusCheckBox7 = new _3d.CusCheckBox();
+            this.cusCheckBox8 = new _3d.CusCheckBox();
+            this.xiaoShuGpb = new System.Windows.Forms.GroupBox();
+            this.cusCheckBox9 = new _3d.CusCheckBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.cusCheckBox14 = new _3d.CusCheckBox();
+            this.cusCheckBox15 = new _3d.CusCheckBox();
+            this.cusCheckBox16 = new _3d.CusCheckBox();
+            this.cusCheckBox17 = new _3d.CusCheckBox();
+            this.cusCheckBox18 = new _3d.CusCheckBox();
+            this.lianHaoGpb = new System.Windows.Forms.GroupBox();
+            this.cusCheckBox19 = new _3d.CusCheckBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.cusCheckBox21 = new _3d.CusCheckBox();
+            this.cusCheckBox22 = new _3d.CusCheckBox();
+            this.cusCheckBox23 = new _3d.CusCheckBox();
+            this.cusCheckBox24 = new _3d.CusCheckBox();
+            this.haoMaPeiZhiGpb = new System.Windows.Forms.GroupBox();
+            this.zhengWeiGpb = new System.Windows.Forms.GroupBox();
+            this.cusCheckBox34 = new _3d.CusCheckBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.cusCheckBox35 = new _3d.CusCheckBox();
+            this.cusCheckBox36 = new _3d.CusCheckBox();
+            this.cusCheckBox37 = new _3d.CusCheckBox();
+            this.cusCheckBox38 = new _3d.CusCheckBox();
+            this.niWeiGpb = new System.Windows.Forms.GroupBox();
+            this.cusCheckBox29 = new _3d.CusCheckBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.cusCheckBox30 = new _3d.CusCheckBox();
+            this.cusCheckBox31 = new _3d.CusCheckBox();
+            this.cusCheckBox32 = new _3d.CusCheckBox();
+            this.cusCheckBox33 = new _3d.CusCheckBox();
+            this.sanDuGpb = new System.Windows.Forms.GroupBox();
+            this.cusCheckBox42 = new _3d.CusCheckBox();
+            this.cusCheckBox41 = new _3d.CusCheckBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.cusCheckBox43 = new _3d.CusCheckBox();
+            this.cusCheckBox44 = new _3d.CusCheckBox();
+            this.cusCheckBox45 = new _3d.CusCheckBox();
+            this.cusCheckBox46 = new _3d.CusCheckBox();
+            this.cusCheckBox47 = new _3d.CusCheckBox();
+            this.duanShuGpb = new System.Windows.Forms.GroupBox();
+            this.cusCheckBox20 = new _3d.CusCheckBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.cusCheckBox27 = new _3d.CusCheckBox();
+            this.cusCheckBox28 = new _3d.CusCheckBox();
+            this.pingHengGpb = new System.Windows.Forms.GroupBox();
+            this.pingHengChu0 = new _3d.CusCheckBox();
+            this.pingHengChu1 = new _3d.CusCheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pingHeng_Zheng = new _3d.CusCheckBox();
+            this.pingHeng_Fu = new _3d.CusCheckBox();
+            this.pingHeng_Deng = new _3d.CusCheckBox();
+            this.pingHengGuiJiGpb = new System.Windows.Forms.GroupBox();
+            this.phgj_Xing = new _3d.CusCheckBox();
+            this.phgj_Zheng = new _3d.CusCheckBox();
+            this.phgj_Fu = new _3d.CusCheckBox();
+            this.phgj_Deng = new _3d.CusCheckBox();
+            this.lianHaoGuiJiGpb = new System.Windows.Forms.GroupBox();
+            this.lhgjChu0 = new _3d.CusCheckBox();
+            this.lhgjChu1 = new _3d.CusCheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lhgj_Zheng = new _3d.CusCheckBox();
+            this.lhgj_Fu = new _3d.CusCheckBox();
+            this.lhgj_Deng = new _3d.CusCheckBox();
             this.oneZuGpb.SuspendLayout();
             this.otherOptionGpb.SuspendLayout();
             this.twoZuGpb.SuspendLayout();
             this.threeZuGpb.SuspendLayout();
             this.fourZuGpb.SuspendLayout();
+            this.ouShuGpb.SuspendLayout();
+            this.heShuGpb.SuspendLayout();
+            this.xiaoShuGpb.SuspendLayout();
+            this.lianHaoGpb.SuspendLayout();
+            this.haoMaPeiZhiGpb.SuspendLayout();
+            this.zhengWeiGpb.SuspendLayout();
+            this.niWeiGpb.SuspendLayout();
+            this.sanDuGpb.SuspendLayout();
+            this.duanShuGpb.SuspendLayout();
+            this.pingHengGpb.SuspendLayout();
+            this.pingHengGuiJiGpb.SuspendLayout();
+            this.lianHaoGuiJiGpb.SuspendLayout();
             this.SuspendLayout();
             // 
             // oneZuGpb
@@ -402,9 +493,9 @@
             this.otherOptionGpb.Controls.Add(this.label1);
             this.otherOptionGpb.Controls.Add(this.fenGeCombx);
             this.otherOptionGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.otherOptionGpb.Location = new System.Drawing.Point(696, 397);
+            this.otherOptionGpb.Location = new System.Drawing.Point(721, 395);
             this.otherOptionGpb.Name = "otherOptionGpb";
-            this.otherOptionGpb.Size = new System.Drawing.Size(202, 50);
+            this.otherOptionGpb.Size = new System.Drawing.Size(178, 52);
             this.otherOptionGpb.TabIndex = 19;
             this.otherOptionGpb.TabStop = false;
             this.otherOptionGpb.Text = "其他选项";
@@ -414,9 +505,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
+            this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "分隔符样式:";
+            this.label1.Text = "分隔符:";
             // 
             // fenGeCombx
             // 
@@ -429,7 +520,7 @@
             "英文逗号,",
             "中文分号；",
             "英文分号;"});
-            this.fenGeCombx.Location = new System.Drawing.Point(92, 17);
+            this.fenGeCombx.Location = new System.Drawing.Point(69, 16);
             this.fenGeCombx.Name = "fenGeCombx";
             this.fenGeCombx.Size = new System.Drawing.Size(102, 28);
             this.fenGeCombx.TabIndex = 16;
@@ -457,7 +548,7 @@
             this.twoZuGpb.Controls.Add(this.twoZu0);
             this.twoZuGpb.Controls.Add(this.label2);
             this.twoZuGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.twoZuGpb.Location = new System.Drawing.Point(2, 56);
+            this.twoZuGpb.Location = new System.Drawing.Point(2, 54);
             this.twoZuGpb.Name = "twoZuGpb";
             this.twoZuGpb.Size = new System.Drawing.Size(896, 52);
             this.twoZuGpb.TabIndex = 29;
@@ -732,7 +823,7 @@
             this.threeZuGpb.Controls.Add(this.threeZu0);
             this.threeZuGpb.Controls.Add(this.label3);
             this.threeZuGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.threeZuGpb.Location = new System.Drawing.Point(2, 111);
+            this.threeZuGpb.Location = new System.Drawing.Point(2, 106);
             this.threeZuGpb.Name = "threeZuGpb";
             this.threeZuGpb.Size = new System.Drawing.Size(896, 52);
             this.threeZuGpb.TabIndex = 29;
@@ -1007,7 +1098,7 @@
             this.fourZuGpb.Controls.Add(this.fourZu0);
             this.fourZuGpb.Controls.Add(this.label4);
             this.fourZuGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.fourZuGpb.Location = new System.Drawing.Point(2, 166);
+            this.fourZuGpb.Location = new System.Drawing.Point(2, 158);
             this.fourZuGpb.Name = "fourZuGpb";
             this.fourZuGpb.Size = new System.Drawing.Size(896, 52);
             this.fourZuGpb.TabIndex = 29;
@@ -1264,16 +1355,1054 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // ouShuGpb
+            // 
+            this.ouShuGpb.Controls.Add(this.cusCheckBox3);
+            this.ouShuGpb.Controls.Add(this.button1);
+            this.ouShuGpb.Controls.Add(this.cusCheckBox5);
+            this.ouShuGpb.Controls.Add(this.cusCheckBox10);
+            this.ouShuGpb.Controls.Add(this.cusCheckBox11);
+            this.ouShuGpb.Controls.Add(this.cusCheckBox12);
+            this.ouShuGpb.Controls.Add(this.cusCheckBox13);
+            this.ouShuGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ouShuGpb.Location = new System.Drawing.Point(2, 210);
+            this.ouShuGpb.Name = "ouShuGpb";
+            this.ouShuGpb.Size = new System.Drawing.Size(295, 52);
+            this.ouShuGpb.TabIndex = 34;
+            this.ouShuGpb.TabStop = false;
+            this.ouShuGpb.Text = "偶数个数";
+            // 
+            // cusCheckBox3
+            // 
+            this.cusCheckBox3.AutoSize = true;
+            this.cusCheckBox3.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox3.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox3.Location = new System.Drawing.Point(11, 20);
+            this.cusCheckBox3.Name = "cusCheckBox3";
+            this.cusCheckBox3.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox3.TabIndex = 34;
+            this.cusCheckBox3.Text = "0";
+            this.cusCheckBox3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(251, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(35, 28);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "清";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cusCheckBox5
+            // 
+            this.cusCheckBox5.AutoSize = true;
+            this.cusCheckBox5.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox5.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox5.Location = new System.Drawing.Point(211, 20);
+            this.cusCheckBox5.Name = "cusCheckBox5";
+            this.cusCheckBox5.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox5.TabIndex = 10;
+            this.cusCheckBox5.Text = "5";
+            this.cusCheckBox5.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox10
+            // 
+            this.cusCheckBox10.AutoSize = true;
+            this.cusCheckBox10.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox10.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox10.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox10.Location = new System.Drawing.Point(171, 20);
+            this.cusCheckBox10.Name = "cusCheckBox10";
+            this.cusCheckBox10.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox10.TabIndex = 5;
+            this.cusCheckBox10.Text = "4";
+            this.cusCheckBox10.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox11
+            // 
+            this.cusCheckBox11.AutoSize = true;
+            this.cusCheckBox11.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox11.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox11.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox11.Location = new System.Drawing.Point(131, 20);
+            this.cusCheckBox11.Name = "cusCheckBox11";
+            this.cusCheckBox11.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox11.TabIndex = 4;
+            this.cusCheckBox11.Text = "3";
+            this.cusCheckBox11.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox12
+            // 
+            this.cusCheckBox12.AutoSize = true;
+            this.cusCheckBox12.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox12.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox12.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox12.Location = new System.Drawing.Point(91, 20);
+            this.cusCheckBox12.Name = "cusCheckBox12";
+            this.cusCheckBox12.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox12.TabIndex = 3;
+            this.cusCheckBox12.Text = "2";
+            this.cusCheckBox12.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox13
+            // 
+            this.cusCheckBox13.AutoSize = true;
+            this.cusCheckBox13.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox13.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox13.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox13.Location = new System.Drawing.Point(51, 20);
+            this.cusCheckBox13.Name = "cusCheckBox13";
+            this.cusCheckBox13.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox13.TabIndex = 2;
+            this.cusCheckBox13.Text = "1";
+            this.cusCheckBox13.UseVisualStyleBackColor = true;
+            // 
+            // heShuGpb
+            // 
+            this.heShuGpb.Controls.Add(this.cusCheckBox1);
+            this.heShuGpb.Controls.Add(this.button2);
+            this.heShuGpb.Controls.Add(this.cusCheckBox2);
+            this.heShuGpb.Controls.Add(this.cusCheckBox4);
+            this.heShuGpb.Controls.Add(this.cusCheckBox6);
+            this.heShuGpb.Controls.Add(this.cusCheckBox7);
+            this.heShuGpb.Controls.Add(this.cusCheckBox8);
+            this.heShuGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.heShuGpb.Location = new System.Drawing.Point(303, 210);
+            this.heShuGpb.Name = "heShuGpb";
+            this.heShuGpb.Size = new System.Drawing.Size(295, 52);
+            this.heShuGpb.TabIndex = 35;
+            this.heShuGpb.TabStop = false;
+            this.heShuGpb.Text = "合数个数";
+            // 
+            // cusCheckBox1
+            // 
+            this.cusCheckBox1.AutoSize = true;
+            this.cusCheckBox1.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox1.Location = new System.Drawing.Point(10, 20);
+            this.cusCheckBox1.Name = "cusCheckBox1";
+            this.cusCheckBox1.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox1.TabIndex = 34;
+            this.cusCheckBox1.Text = "0";
+            this.cusCheckBox1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(250, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(35, 28);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "清";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // cusCheckBox2
+            // 
+            this.cusCheckBox2.AutoSize = true;
+            this.cusCheckBox2.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox2.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox2.Location = new System.Drawing.Point(210, 20);
+            this.cusCheckBox2.Name = "cusCheckBox2";
+            this.cusCheckBox2.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox2.TabIndex = 10;
+            this.cusCheckBox2.Text = "5";
+            this.cusCheckBox2.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox4
+            // 
+            this.cusCheckBox4.AutoSize = true;
+            this.cusCheckBox4.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox4.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox4.Location = new System.Drawing.Point(170, 20);
+            this.cusCheckBox4.Name = "cusCheckBox4";
+            this.cusCheckBox4.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox4.TabIndex = 5;
+            this.cusCheckBox4.Text = "4";
+            this.cusCheckBox4.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox6
+            // 
+            this.cusCheckBox6.AutoSize = true;
+            this.cusCheckBox6.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox6.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox6.Location = new System.Drawing.Point(130, 20);
+            this.cusCheckBox6.Name = "cusCheckBox6";
+            this.cusCheckBox6.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox6.TabIndex = 4;
+            this.cusCheckBox6.Text = "3";
+            this.cusCheckBox6.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox7
+            // 
+            this.cusCheckBox7.AutoSize = true;
+            this.cusCheckBox7.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox7.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox7.Location = new System.Drawing.Point(90, 20);
+            this.cusCheckBox7.Name = "cusCheckBox7";
+            this.cusCheckBox7.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox7.TabIndex = 3;
+            this.cusCheckBox7.Text = "2";
+            this.cusCheckBox7.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox8
+            // 
+            this.cusCheckBox8.AutoSize = true;
+            this.cusCheckBox8.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox8.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox8.Location = new System.Drawing.Point(50, 20);
+            this.cusCheckBox8.Name = "cusCheckBox8";
+            this.cusCheckBox8.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox8.TabIndex = 2;
+            this.cusCheckBox8.Text = "1";
+            this.cusCheckBox8.UseVisualStyleBackColor = true;
+            // 
+            // xiaoShuGpb
+            // 
+            this.xiaoShuGpb.Controls.Add(this.cusCheckBox9);
+            this.xiaoShuGpb.Controls.Add(this.button3);
+            this.xiaoShuGpb.Controls.Add(this.cusCheckBox14);
+            this.xiaoShuGpb.Controls.Add(this.cusCheckBox15);
+            this.xiaoShuGpb.Controls.Add(this.cusCheckBox16);
+            this.xiaoShuGpb.Controls.Add(this.cusCheckBox17);
+            this.xiaoShuGpb.Controls.Add(this.cusCheckBox18);
+            this.xiaoShuGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xiaoShuGpb.Location = new System.Drawing.Point(603, 210);
+            this.xiaoShuGpb.Name = "xiaoShuGpb";
+            this.xiaoShuGpb.Size = new System.Drawing.Size(295, 52);
+            this.xiaoShuGpb.TabIndex = 36;
+            this.xiaoShuGpb.TabStop = false;
+            this.xiaoShuGpb.Text = "小数个数";
+            // 
+            // cusCheckBox9
+            // 
+            this.cusCheckBox9.AutoSize = true;
+            this.cusCheckBox9.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox9.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox9.Location = new System.Drawing.Point(13, 21);
+            this.cusCheckBox9.Name = "cusCheckBox9";
+            this.cusCheckBox9.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox9.TabIndex = 34;
+            this.cusCheckBox9.Text = "0";
+            this.cusCheckBox9.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(253, 15);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(35, 28);
+            this.button3.TabIndex = 33;
+            this.button3.Text = "清";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // cusCheckBox14
+            // 
+            this.cusCheckBox14.AutoSize = true;
+            this.cusCheckBox14.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox14.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox14.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox14.Location = new System.Drawing.Point(213, 21);
+            this.cusCheckBox14.Name = "cusCheckBox14";
+            this.cusCheckBox14.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox14.TabIndex = 10;
+            this.cusCheckBox14.Text = "5";
+            this.cusCheckBox14.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox15
+            // 
+            this.cusCheckBox15.AutoSize = true;
+            this.cusCheckBox15.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox15.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox15.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox15.Location = new System.Drawing.Point(173, 21);
+            this.cusCheckBox15.Name = "cusCheckBox15";
+            this.cusCheckBox15.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox15.TabIndex = 5;
+            this.cusCheckBox15.Text = "4";
+            this.cusCheckBox15.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox16
+            // 
+            this.cusCheckBox16.AutoSize = true;
+            this.cusCheckBox16.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox16.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox16.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox16.Location = new System.Drawing.Point(133, 21);
+            this.cusCheckBox16.Name = "cusCheckBox16";
+            this.cusCheckBox16.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox16.TabIndex = 4;
+            this.cusCheckBox16.Text = "3";
+            this.cusCheckBox16.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox17
+            // 
+            this.cusCheckBox17.AutoSize = true;
+            this.cusCheckBox17.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox17.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox17.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox17.Location = new System.Drawing.Point(93, 21);
+            this.cusCheckBox17.Name = "cusCheckBox17";
+            this.cusCheckBox17.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox17.TabIndex = 3;
+            this.cusCheckBox17.Text = "2";
+            this.cusCheckBox17.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox18
+            // 
+            this.cusCheckBox18.AutoSize = true;
+            this.cusCheckBox18.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox18.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox18.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox18.Location = new System.Drawing.Point(53, 21);
+            this.cusCheckBox18.Name = "cusCheckBox18";
+            this.cusCheckBox18.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox18.TabIndex = 2;
+            this.cusCheckBox18.Text = "1";
+            this.cusCheckBox18.UseVisualStyleBackColor = true;
+            // 
+            // lianHaoGpb
+            // 
+            this.lianHaoGpb.Controls.Add(this.cusCheckBox19);
+            this.lianHaoGpb.Controls.Add(this.button4);
+            this.lianHaoGpb.Controls.Add(this.cusCheckBox21);
+            this.lianHaoGpb.Controls.Add(this.cusCheckBox22);
+            this.lianHaoGpb.Controls.Add(this.cusCheckBox23);
+            this.lianHaoGpb.Controls.Add(this.cusCheckBox24);
+            this.lianHaoGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lianHaoGpb.Location = new System.Drawing.Point(2, 261);
+            this.lianHaoGpb.Name = "lianHaoGpb";
+            this.lianHaoGpb.Size = new System.Drawing.Size(295, 52);
+            this.lianHaoGpb.TabIndex = 37;
+            this.lianHaoGpb.TabStop = false;
+            this.lianHaoGpb.Text = "连号个数";
+            // 
+            // cusCheckBox19
+            // 
+            this.cusCheckBox19.AutoSize = true;
+            this.cusCheckBox19.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox19.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox19.Location = new System.Drawing.Point(11, 21);
+            this.cusCheckBox19.Name = "cusCheckBox19";
+            this.cusCheckBox19.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox19.TabIndex = 34;
+            this.cusCheckBox19.Text = "0";
+            this.cusCheckBox19.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(251, 14);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(35, 28);
+            this.button4.TabIndex = 33;
+            this.button4.Text = "清";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // cusCheckBox21
+            // 
+            this.cusCheckBox21.AutoSize = true;
+            this.cusCheckBox21.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox21.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox21.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox21.Location = new System.Drawing.Point(171, 21);
+            this.cusCheckBox21.Name = "cusCheckBox21";
+            this.cusCheckBox21.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox21.TabIndex = 5;
+            this.cusCheckBox21.Text = "4";
+            this.cusCheckBox21.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox22
+            // 
+            this.cusCheckBox22.AutoSize = true;
+            this.cusCheckBox22.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox22.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox22.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox22.Location = new System.Drawing.Point(131, 21);
+            this.cusCheckBox22.Name = "cusCheckBox22";
+            this.cusCheckBox22.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox22.TabIndex = 4;
+            this.cusCheckBox22.Text = "3";
+            this.cusCheckBox22.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox23
+            // 
+            this.cusCheckBox23.AutoSize = true;
+            this.cusCheckBox23.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox23.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox23.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox23.Location = new System.Drawing.Point(91, 21);
+            this.cusCheckBox23.Name = "cusCheckBox23";
+            this.cusCheckBox23.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox23.TabIndex = 3;
+            this.cusCheckBox23.Text = "2";
+            this.cusCheckBox23.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox24
+            // 
+            this.cusCheckBox24.AutoSize = true;
+            this.cusCheckBox24.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox24.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox24.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox24.Location = new System.Drawing.Point(51, 21);
+            this.cusCheckBox24.Name = "cusCheckBox24";
+            this.cusCheckBox24.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox24.TabIndex = 2;
+            this.cusCheckBox24.Text = "1";
+            this.cusCheckBox24.UseVisualStyleBackColor = true;
+            // 
+            // haoMaPeiZhiGpb
+            // 
+            this.haoMaPeiZhiGpb.Controls.Add(this.zhengWeiGpb);
+            this.haoMaPeiZhiGpb.Controls.Add(this.niWeiGpb);
+            this.haoMaPeiZhiGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.haoMaPeiZhiGpb.Location = new System.Drawing.Point(2, 374);
+            this.haoMaPeiZhiGpb.Name = "haoMaPeiZhiGpb";
+            this.haoMaPeiZhiGpb.Size = new System.Drawing.Size(528, 73);
+            this.haoMaPeiZhiGpb.TabIndex = 38;
+            this.haoMaPeiZhiGpb.TabStop = false;
+            this.haoMaPeiZhiGpb.Text = "号码配置";
+            // 
+            // zhengWeiGpb
+            // 
+            this.zhengWeiGpb.Controls.Add(this.cusCheckBox34);
+            this.zhengWeiGpb.Controls.Add(this.button7);
+            this.zhengWeiGpb.Controls.Add(this.cusCheckBox35);
+            this.zhengWeiGpb.Controls.Add(this.cusCheckBox36);
+            this.zhengWeiGpb.Controls.Add(this.cusCheckBox37);
+            this.zhengWeiGpb.Controls.Add(this.cusCheckBox38);
+            this.zhengWeiGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.zhengWeiGpb.Location = new System.Drawing.Point(265, 17);
+            this.zhengWeiGpb.Name = "zhengWeiGpb";
+            this.zhengWeiGpb.Size = new System.Drawing.Size(253, 52);
+            this.zhengWeiGpb.TabIndex = 39;
+            this.zhengWeiGpb.TabStop = false;
+            this.zhengWeiGpb.Text = "07  08  09  10  11";
+            // 
+            // cusCheckBox34
+            // 
+            this.cusCheckBox34.AutoSize = true;
+            this.cusCheckBox34.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox34.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox34.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox34.Location = new System.Drawing.Point(11, 21);
+            this.cusCheckBox34.Name = "cusCheckBox34";
+            this.cusCheckBox34.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox34.TabIndex = 34;
+            this.cusCheckBox34.Text = "1";
+            this.cusCheckBox34.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(211, 15);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(35, 28);
+            this.button7.TabIndex = 33;
+            this.button7.Text = "清";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // cusCheckBox35
+            // 
+            this.cusCheckBox35.AutoSize = true;
+            this.cusCheckBox35.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox35.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox35.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox35.Location = new System.Drawing.Point(171, 21);
+            this.cusCheckBox35.Name = "cusCheckBox35";
+            this.cusCheckBox35.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox35.TabIndex = 5;
+            this.cusCheckBox35.Text = "5";
+            this.cusCheckBox35.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox36
+            // 
+            this.cusCheckBox36.AutoSize = true;
+            this.cusCheckBox36.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox36.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox36.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox36.Location = new System.Drawing.Point(131, 21);
+            this.cusCheckBox36.Name = "cusCheckBox36";
+            this.cusCheckBox36.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox36.TabIndex = 4;
+            this.cusCheckBox36.Text = "4";
+            this.cusCheckBox36.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox37
+            // 
+            this.cusCheckBox37.AutoSize = true;
+            this.cusCheckBox37.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox37.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox37.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox37.Location = new System.Drawing.Point(91, 21);
+            this.cusCheckBox37.Name = "cusCheckBox37";
+            this.cusCheckBox37.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox37.TabIndex = 3;
+            this.cusCheckBox37.Text = "3";
+            this.cusCheckBox37.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox38
+            // 
+            this.cusCheckBox38.AutoSize = true;
+            this.cusCheckBox38.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox38.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox38.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox38.Location = new System.Drawing.Point(51, 21);
+            this.cusCheckBox38.Name = "cusCheckBox38";
+            this.cusCheckBox38.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox38.TabIndex = 2;
+            this.cusCheckBox38.Text = "2";
+            this.cusCheckBox38.UseVisualStyleBackColor = true;
+            // 
+            // niWeiGpb
+            // 
+            this.niWeiGpb.Controls.Add(this.cusCheckBox29);
+            this.niWeiGpb.Controls.Add(this.button6);
+            this.niWeiGpb.Controls.Add(this.cusCheckBox30);
+            this.niWeiGpb.Controls.Add(this.cusCheckBox31);
+            this.niWeiGpb.Controls.Add(this.cusCheckBox32);
+            this.niWeiGpb.Controls.Add(this.cusCheckBox33);
+            this.niWeiGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.niWeiGpb.Location = new System.Drawing.Point(6, 17);
+            this.niWeiGpb.Name = "niWeiGpb";
+            this.niWeiGpb.Size = new System.Drawing.Size(253, 52);
+            this.niWeiGpb.TabIndex = 38;
+            this.niWeiGpb.TabStop = false;
+            this.niWeiGpb.Text = "01  02  03  04  05";
+            // 
+            // cusCheckBox29
+            // 
+            this.cusCheckBox29.AutoSize = true;
+            this.cusCheckBox29.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox29.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox29.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox29.Location = new System.Drawing.Point(11, 21);
+            this.cusCheckBox29.Name = "cusCheckBox29";
+            this.cusCheckBox29.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox29.TabIndex = 34;
+            this.cusCheckBox29.Text = "5";
+            this.cusCheckBox29.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(211, 15);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(35, 28);
+            this.button6.TabIndex = 33;
+            this.button6.Text = "清";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // cusCheckBox30
+            // 
+            this.cusCheckBox30.AutoSize = true;
+            this.cusCheckBox30.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox30.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox30.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox30.Location = new System.Drawing.Point(171, 21);
+            this.cusCheckBox30.Name = "cusCheckBox30";
+            this.cusCheckBox30.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox30.TabIndex = 5;
+            this.cusCheckBox30.Text = "1";
+            this.cusCheckBox30.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox31
+            // 
+            this.cusCheckBox31.AutoSize = true;
+            this.cusCheckBox31.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox31.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox31.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox31.Location = new System.Drawing.Point(131, 21);
+            this.cusCheckBox31.Name = "cusCheckBox31";
+            this.cusCheckBox31.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox31.TabIndex = 4;
+            this.cusCheckBox31.Text = "2";
+            this.cusCheckBox31.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox32
+            // 
+            this.cusCheckBox32.AutoSize = true;
+            this.cusCheckBox32.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox32.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox32.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox32.Location = new System.Drawing.Point(91, 21);
+            this.cusCheckBox32.Name = "cusCheckBox32";
+            this.cusCheckBox32.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox32.TabIndex = 3;
+            this.cusCheckBox32.Text = "3";
+            this.cusCheckBox32.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox33
+            // 
+            this.cusCheckBox33.AutoSize = true;
+            this.cusCheckBox33.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox33.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox33.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox33.Location = new System.Drawing.Point(51, 21);
+            this.cusCheckBox33.Name = "cusCheckBox33";
+            this.cusCheckBox33.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox33.TabIndex = 2;
+            this.cusCheckBox33.Text = "4";
+            this.cusCheckBox33.UseVisualStyleBackColor = true;
+            // 
+            // sanDuGpb
+            // 
+            this.sanDuGpb.Controls.Add(this.cusCheckBox42);
+            this.sanDuGpb.Controls.Add(this.cusCheckBox41);
+            this.sanDuGpb.Controls.Add(this.button8);
+            this.sanDuGpb.Controls.Add(this.cusCheckBox43);
+            this.sanDuGpb.Controls.Add(this.cusCheckBox44);
+            this.sanDuGpb.Controls.Add(this.cusCheckBox45);
+            this.sanDuGpb.Controls.Add(this.cusCheckBox46);
+            this.sanDuGpb.Controls.Add(this.cusCheckBox47);
+            this.sanDuGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sanDuGpb.Location = new System.Drawing.Point(547, 313);
+            this.sanDuGpb.Name = "sanDuGpb";
+            this.sanDuGpb.Size = new System.Drawing.Size(352, 52);
+            this.sanDuGpb.TabIndex = 37;
+            this.sanDuGpb.TabStop = false;
+            this.sanDuGpb.Text = "号码散度(暂时无效)";
+            // 
+            // cusCheckBox42
+            // 
+            this.cusCheckBox42.AutoSize = true;
+            this.cusCheckBox42.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox42.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox42.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox42.Location = new System.Drawing.Point(249, 21);
+            this.cusCheckBox42.Name = "cusCheckBox42";
+            this.cusCheckBox42.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox42.TabIndex = 36;
+            this.cusCheckBox42.Text = "7";
+            this.cusCheckBox42.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox41
+            // 
+            this.cusCheckBox41.AutoSize = true;
+            this.cusCheckBox41.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox41.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox41.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox41.Location = new System.Drawing.Point(210, 21);
+            this.cusCheckBox41.Name = "cusCheckBox41";
+            this.cusCheckBox41.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox41.TabIndex = 35;
+            this.cusCheckBox41.Text = "6";
+            this.cusCheckBox41.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(301, 14);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(35, 28);
+            this.button8.TabIndex = 33;
+            this.button8.Text = "清";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // cusCheckBox43
+            // 
+            this.cusCheckBox43.AutoSize = true;
+            this.cusCheckBox43.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox43.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox43.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox43.Location = new System.Drawing.Point(170, 21);
+            this.cusCheckBox43.Name = "cusCheckBox43";
+            this.cusCheckBox43.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox43.TabIndex = 10;
+            this.cusCheckBox43.Text = "5";
+            this.cusCheckBox43.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox44
+            // 
+            this.cusCheckBox44.AutoSize = true;
+            this.cusCheckBox44.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox44.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox44.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox44.Location = new System.Drawing.Point(130, 21);
+            this.cusCheckBox44.Name = "cusCheckBox44";
+            this.cusCheckBox44.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox44.TabIndex = 5;
+            this.cusCheckBox44.Text = "4";
+            this.cusCheckBox44.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox45
+            // 
+            this.cusCheckBox45.AutoSize = true;
+            this.cusCheckBox45.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox45.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox45.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox45.Location = new System.Drawing.Point(90, 21);
+            this.cusCheckBox45.Name = "cusCheckBox45";
+            this.cusCheckBox45.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox45.TabIndex = 4;
+            this.cusCheckBox45.Text = "3";
+            this.cusCheckBox45.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox46
+            // 
+            this.cusCheckBox46.AutoSize = true;
+            this.cusCheckBox46.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox46.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox46.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox46.Location = new System.Drawing.Point(50, 21);
+            this.cusCheckBox46.Name = "cusCheckBox46";
+            this.cusCheckBox46.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox46.TabIndex = 3;
+            this.cusCheckBox46.Text = "2";
+            this.cusCheckBox46.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox47
+            // 
+            this.cusCheckBox47.AutoSize = true;
+            this.cusCheckBox47.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox47.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox47.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox47.Location = new System.Drawing.Point(10, 21);
+            this.cusCheckBox47.Name = "cusCheckBox47";
+            this.cusCheckBox47.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox47.TabIndex = 2;
+            this.cusCheckBox47.Text = "1";
+            this.cusCheckBox47.UseVisualStyleBackColor = true;
+            // 
+            // duanShuGpb
+            // 
+            this.duanShuGpb.Controls.Add(this.cusCheckBox20);
+            this.duanShuGpb.Controls.Add(this.button5);
+            this.duanShuGpb.Controls.Add(this.cusCheckBox27);
+            this.duanShuGpb.Controls.Add(this.cusCheckBox28);
+            this.duanShuGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.duanShuGpb.Location = new System.Drawing.Point(303, 261);
+            this.duanShuGpb.Name = "duanShuGpb";
+            this.duanShuGpb.Size = new System.Drawing.Size(295, 52);
+            this.duanShuGpb.TabIndex = 38;
+            this.duanShuGpb.TabStop = false;
+            this.duanShuGpb.Text = "连号组数";
+            // 
+            // cusCheckBox20
+            // 
+            this.cusCheckBox20.AutoSize = true;
+            this.cusCheckBox20.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox20.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox20.Location = new System.Drawing.Point(11, 21);
+            this.cusCheckBox20.Name = "cusCheckBox20";
+            this.cusCheckBox20.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox20.TabIndex = 34;
+            this.cusCheckBox20.Text = "0";
+            this.cusCheckBox20.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(251, 14);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(35, 28);
+            this.button5.TabIndex = 33;
+            this.button5.Text = "清";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // cusCheckBox27
+            // 
+            this.cusCheckBox27.AutoSize = true;
+            this.cusCheckBox27.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox27.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox27.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox27.Location = new System.Drawing.Point(91, 21);
+            this.cusCheckBox27.Name = "cusCheckBox27";
+            this.cusCheckBox27.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox27.TabIndex = 3;
+            this.cusCheckBox27.Text = "2";
+            this.cusCheckBox27.UseVisualStyleBackColor = true;
+            // 
+            // cusCheckBox28
+            // 
+            this.cusCheckBox28.AutoSize = true;
+            this.cusCheckBox28.checkBgColor = System.Drawing.Color.Empty;
+            this.cusCheckBox28.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.cusCheckBox28.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cusCheckBox28.Location = new System.Drawing.Point(51, 21);
+            this.cusCheckBox28.Name = "cusCheckBox28";
+            this.cusCheckBox28.Size = new System.Drawing.Size(34, 21);
+            this.cusCheckBox28.TabIndex = 2;
+            this.cusCheckBox28.Text = "1";
+            this.cusCheckBox28.UseVisualStyleBackColor = true;
+            // 
+            // pingHengGpb
+            // 
+            this.pingHengGpb.Controls.Add(this.pingHengChu0);
+            this.pingHengGpb.Controls.Add(this.pingHengChu1);
+            this.pingHengGpb.Controls.Add(this.label5);
+            this.pingHengGpb.Controls.Add(this.pingHeng_Zheng);
+            this.pingHengGpb.Controls.Add(this.pingHeng_Fu);
+            this.pingHengGpb.Controls.Add(this.pingHeng_Deng);
+            this.pingHengGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pingHengGpb.Location = new System.Drawing.Point(2, 313);
+            this.pingHengGpb.Name = "pingHengGpb";
+            this.pingHengGpb.Size = new System.Drawing.Size(295, 52);
+            this.pingHengGpb.TabIndex = 39;
+            this.pingHengGpb.TabStop = false;
+            this.pingHengGpb.Text = "平衡指数";
+            // 
+            // pingHengChu0
+            // 
+            this.pingHengChu0.AutoSize = true;
+            this.pingHengChu0.checkBgColor = System.Drawing.Color.Empty;
+            this.pingHengChu0.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.pingHengChu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pingHengChu0.Location = new System.Drawing.Point(177, 20);
+            this.pingHengChu0.Name = "pingHengChu0";
+            this.pingHengChu0.Size = new System.Drawing.Size(34, 21);
+            this.pingHengChu0.TabIndex = 36;
+            this.pingHengChu0.Text = "0";
+            this.pingHengChu0.UseVisualStyleBackColor = true;
+            // 
+            // pingHengChu1
+            // 
+            this.pingHengChu1.AutoSize = true;
+            this.pingHengChu1.checkBgColor = System.Drawing.Color.Empty;
+            this.pingHengChu1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.pingHengChu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pingHengChu1.Location = new System.Drawing.Point(217, 20);
+            this.pingHengChu1.Name = "pingHengChu1";
+            this.pingHengChu1.Size = new System.Drawing.Size(34, 21);
+            this.pingHengChu1.TabIndex = 35;
+            this.pingHengChu1.Text = "1";
+            this.pingHengChu1.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(145, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 20);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "出:";
+            // 
+            // pingHeng_Zheng
+            // 
+            this.pingHeng_Zheng.AutoSize = true;
+            this.pingHeng_Zheng.checkBgColor = System.Drawing.Color.Empty;
+            this.pingHeng_Zheng.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.pingHeng_Zheng.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pingHeng_Zheng.Location = new System.Drawing.Point(11, 21);
+            this.pingHeng_Zheng.Name = "pingHeng_Zheng";
+            this.pingHeng_Zheng.Size = new System.Drawing.Size(36, 21);
+            this.pingHeng_Zheng.TabIndex = 34;
+            this.pingHeng_Zheng.Text = "+";
+            this.pingHeng_Zheng.UseVisualStyleBackColor = true;
+            // 
+            // pingHeng_Fu
+            // 
+            this.pingHeng_Fu.AutoSize = true;
+            this.pingHeng_Fu.checkBgColor = System.Drawing.Color.Empty;
+            this.pingHeng_Fu.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.pingHeng_Fu.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pingHeng_Fu.Location = new System.Drawing.Point(91, 21);
+            this.pingHeng_Fu.Name = "pingHeng_Fu";
+            this.pingHeng_Fu.Size = new System.Drawing.Size(32, 21);
+            this.pingHeng_Fu.TabIndex = 3;
+            this.pingHeng_Fu.Text = "-";
+            this.pingHeng_Fu.UseVisualStyleBackColor = true;
+            // 
+            // pingHeng_Deng
+            // 
+            this.pingHeng_Deng.AutoSize = true;
+            this.pingHeng_Deng.checkBgColor = System.Drawing.Color.Empty;
+            this.pingHeng_Deng.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.pingHeng_Deng.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pingHeng_Deng.Location = new System.Drawing.Point(51, 21);
+            this.pingHeng_Deng.Name = "pingHeng_Deng";
+            this.pingHeng_Deng.Size = new System.Drawing.Size(36, 21);
+            this.pingHeng_Deng.TabIndex = 2;
+            this.pingHeng_Deng.Text = "=";
+            this.pingHeng_Deng.UseVisualStyleBackColor = true;
+            // 
+            // pingHengGuiJiGpb
+            // 
+            this.pingHengGuiJiGpb.Controls.Add(this.phgj_Xing);
+            this.pingHengGuiJiGpb.Controls.Add(this.phgj_Zheng);
+            this.pingHengGuiJiGpb.Controls.Add(this.phgj_Fu);
+            this.pingHengGuiJiGpb.Controls.Add(this.phgj_Deng);
+            this.pingHengGuiJiGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pingHengGuiJiGpb.Location = new System.Drawing.Point(303, 313);
+            this.pingHengGuiJiGpb.Name = "pingHengGuiJiGpb";
+            this.pingHengGuiJiGpb.Size = new System.Drawing.Size(238, 52);
+            this.pingHengGuiJiGpb.TabIndex = 40;
+            this.pingHengGuiJiGpb.TabStop = false;
+            this.pingHengGuiJiGpb.Text = "平衡轨迹";
+            // 
+            // phgj_Xing
+            // 
+            this.phgj_Xing.AutoSize = true;
+            this.phgj_Xing.checkBgColor = System.Drawing.Color.Empty;
+            this.phgj_Xing.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.phgj_Xing.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.phgj_Xing.Location = new System.Drawing.Point(123, 21);
+            this.phgj_Xing.Name = "phgj_Xing";
+            this.phgj_Xing.Size = new System.Drawing.Size(32, 21);
+            this.phgj_Xing.TabIndex = 36;
+            this.phgj_Xing.Text = "*";
+            this.phgj_Xing.UseVisualStyleBackColor = true;
+            // 
+            // phgj_Zheng
+            // 
+            this.phgj_Zheng.AutoSize = true;
+            this.phgj_Zheng.checkBgColor = System.Drawing.Color.Empty;
+            this.phgj_Zheng.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.phgj_Zheng.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.phgj_Zheng.Location = new System.Drawing.Point(11, 21);
+            this.phgj_Zheng.Name = "phgj_Zheng";
+            this.phgj_Zheng.Size = new System.Drawing.Size(36, 21);
+            this.phgj_Zheng.TabIndex = 34;
+            this.phgj_Zheng.Text = "+";
+            this.phgj_Zheng.UseVisualStyleBackColor = true;
+            // 
+            // phgj_Fu
+            // 
+            this.phgj_Fu.AutoSize = true;
+            this.phgj_Fu.checkBgColor = System.Drawing.Color.Empty;
+            this.phgj_Fu.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.phgj_Fu.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.phgj_Fu.Location = new System.Drawing.Point(91, 21);
+            this.phgj_Fu.Name = "phgj_Fu";
+            this.phgj_Fu.Size = new System.Drawing.Size(32, 21);
+            this.phgj_Fu.TabIndex = 3;
+            this.phgj_Fu.Text = "-";
+            this.phgj_Fu.UseVisualStyleBackColor = true;
+            // 
+            // phgj_Deng
+            // 
+            this.phgj_Deng.AutoSize = true;
+            this.phgj_Deng.checkBgColor = System.Drawing.Color.Empty;
+            this.phgj_Deng.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.phgj_Deng.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.phgj_Deng.Location = new System.Drawing.Point(51, 21);
+            this.phgj_Deng.Name = "phgj_Deng";
+            this.phgj_Deng.Size = new System.Drawing.Size(36, 21);
+            this.phgj_Deng.TabIndex = 2;
+            this.phgj_Deng.Text = "=";
+            this.phgj_Deng.UseVisualStyleBackColor = true;
+            // 
+            // lianHaoGuiJiGpb
+            // 
+            this.lianHaoGuiJiGpb.Controls.Add(this.lhgjChu0);
+            this.lianHaoGuiJiGpb.Controls.Add(this.lhgjChu1);
+            this.lianHaoGuiJiGpb.Controls.Add(this.label7);
+            this.lianHaoGuiJiGpb.Controls.Add(this.lhgj_Zheng);
+            this.lianHaoGuiJiGpb.Controls.Add(this.lhgj_Fu);
+            this.lianHaoGuiJiGpb.Controls.Add(this.lhgj_Deng);
+            this.lianHaoGuiJiGpb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lianHaoGuiJiGpb.Location = new System.Drawing.Point(604, 261);
+            this.lianHaoGuiJiGpb.Name = "lianHaoGuiJiGpb";
+            this.lianHaoGuiJiGpb.Size = new System.Drawing.Size(295, 52);
+            this.lianHaoGuiJiGpb.TabIndex = 41;
+            this.lianHaoGuiJiGpb.TabStop = false;
+            this.lianHaoGuiJiGpb.Text = "连号轨迹";
+            // 
+            // lhgjChu0
+            // 
+            this.lhgjChu0.AutoSize = true;
+            this.lhgjChu0.checkBgColor = System.Drawing.Color.Empty;
+            this.lhgjChu0.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.lhgjChu0.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lhgjChu0.Location = new System.Drawing.Point(177, 20);
+            this.lhgjChu0.Name = "lhgjChu0";
+            this.lhgjChu0.Size = new System.Drawing.Size(34, 21);
+            this.lhgjChu0.TabIndex = 36;
+            this.lhgjChu0.Text = "0";
+            this.lhgjChu0.UseVisualStyleBackColor = true;
+            // 
+            // lhgjChu1
+            // 
+            this.lhgjChu1.AutoSize = true;
+            this.lhgjChu1.checkBgColor = System.Drawing.Color.Empty;
+            this.lhgjChu1.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.lhgjChu1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lhgjChu1.Location = new System.Drawing.Point(217, 20);
+            this.lhgjChu1.Name = "lhgjChu1";
+            this.lhgjChu1.Size = new System.Drawing.Size(34, 21);
+            this.lhgjChu1.TabIndex = 35;
+            this.lhgjChu1.Text = "1";
+            this.lhgjChu1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(145, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(26, 20);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "出:";
+            // 
+            // lhgj_Zheng
+            // 
+            this.lhgj_Zheng.AutoSize = true;
+            this.lhgj_Zheng.checkBgColor = System.Drawing.Color.Empty;
+            this.lhgj_Zheng.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.lhgj_Zheng.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lhgj_Zheng.Location = new System.Drawing.Point(11, 21);
+            this.lhgj_Zheng.Name = "lhgj_Zheng";
+            this.lhgj_Zheng.Size = new System.Drawing.Size(36, 21);
+            this.lhgj_Zheng.TabIndex = 34;
+            this.lhgj_Zheng.Text = "+";
+            this.lhgj_Zheng.UseVisualStyleBackColor = true;
+            // 
+            // lhgj_Fu
+            // 
+            this.lhgj_Fu.AutoSize = true;
+            this.lhgj_Fu.checkBgColor = System.Drawing.Color.Empty;
+            this.lhgj_Fu.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.lhgj_Fu.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lhgj_Fu.Location = new System.Drawing.Point(91, 21);
+            this.lhgj_Fu.Name = "lhgj_Fu";
+            this.lhgj_Fu.Size = new System.Drawing.Size(32, 21);
+            this.lhgj_Fu.TabIndex = 3;
+            this.lhgj_Fu.Text = "-";
+            this.lhgj_Fu.UseVisualStyleBackColor = true;
+            // 
+            // lhgj_Deng
+            // 
+            this.lhgj_Deng.AutoSize = true;
+            this.lhgj_Deng.checkBgColor = System.Drawing.Color.Empty;
+            this.lhgj_Deng.CheckColor = System.Drawing.SystemColors.ControlText;
+            this.lhgj_Deng.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lhgj_Deng.Location = new System.Drawing.Point(51, 21);
+            this.lhgj_Deng.Name = "lhgj_Deng";
+            this.lhgj_Deng.Size = new System.Drawing.Size(36, 21);
+            this.lhgj_Deng.TabIndex = 2;
+            this.lhgj_Deng.Text = "=";
+            this.lhgj_Deng.UseVisualStyleBackColor = true;
+            // 
             // one11xuan5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(904, 459);
+            this.Controls.Add(this.lianHaoGuiJiGpb);
+            this.Controls.Add(this.pingHengGuiJiGpb);
+            this.Controls.Add(this.pingHengGpb);
+            this.Controls.Add(this.duanShuGpb);
+            this.Controls.Add(this.otherOptionGpb);
+            this.Controls.Add(this.sanDuGpb);
+            this.Controls.Add(this.haoMaPeiZhiGpb);
+            this.Controls.Add(this.lianHaoGpb);
+            this.Controls.Add(this.xiaoShuGpb);
+            this.Controls.Add(this.heShuGpb);
+            this.Controls.Add(this.ouShuGpb);
             this.Controls.Add(this.fourZuGpb);
             this.Controls.Add(this.threeZuGpb);
             this.Controls.Add(this.twoZuGpb);
-            this.Controls.Add(this.otherOptionGpb);
             this.Controls.Add(this.oneZuGpb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "one11xuan5";
@@ -1288,6 +2417,29 @@
             this.threeZuGpb.PerformLayout();
             this.fourZuGpb.ResumeLayout(false);
             this.fourZuGpb.PerformLayout();
+            this.ouShuGpb.ResumeLayout(false);
+            this.ouShuGpb.PerformLayout();
+            this.heShuGpb.ResumeLayout(false);
+            this.heShuGpb.PerformLayout();
+            this.xiaoShuGpb.ResumeLayout(false);
+            this.xiaoShuGpb.PerformLayout();
+            this.lianHaoGpb.ResumeLayout(false);
+            this.lianHaoGpb.PerformLayout();
+            this.haoMaPeiZhiGpb.ResumeLayout(false);
+            this.zhengWeiGpb.ResumeLayout(false);
+            this.zhengWeiGpb.PerformLayout();
+            this.niWeiGpb.ResumeLayout(false);
+            this.niWeiGpb.PerformLayout();
+            this.sanDuGpb.ResumeLayout(false);
+            this.sanDuGpb.PerformLayout();
+            this.duanShuGpb.ResumeLayout(false);
+            this.duanShuGpb.PerformLayout();
+            this.pingHengGpb.ResumeLayout(false);
+            this.pingHengGpb.PerformLayout();
+            this.pingHengGuiJiGpb.ResumeLayout(false);
+            this.pingHengGuiJiGpb.PerformLayout();
+            this.lianHaoGuiJiGpb.ResumeLayout(false);
+            this.lianHaoGuiJiGpb.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1379,6 +2531,85 @@
         public System.Windows.Forms.Button twoZuClearBtn;
         public System.Windows.Forms.Button threeZuClearBtn;
         public System.Windows.Forms.Button fourZuClearBtn;
+        public System.Windows.Forms.GroupBox ouShuGpb;
+        public CusCheckBox cusCheckBox3;
+        public System.Windows.Forms.Button button1;
+        public CusCheckBox cusCheckBox5;
+        public CusCheckBox cusCheckBox10;
+        public CusCheckBox cusCheckBox11;
+        public CusCheckBox cusCheckBox12;
+        public CusCheckBox cusCheckBox13;
+        public System.Windows.Forms.GroupBox heShuGpb;
+        public CusCheckBox cusCheckBox1;
+        public System.Windows.Forms.Button button2;
+        public CusCheckBox cusCheckBox2;
+        public CusCheckBox cusCheckBox4;
+        public CusCheckBox cusCheckBox6;
+        public CusCheckBox cusCheckBox7;
+        public CusCheckBox cusCheckBox8;
+        public System.Windows.Forms.GroupBox xiaoShuGpb;
+        public CusCheckBox cusCheckBox9;
+        public System.Windows.Forms.Button button3;
+        public CusCheckBox cusCheckBox14;
+        public CusCheckBox cusCheckBox15;
+        public CusCheckBox cusCheckBox16;
+        public CusCheckBox cusCheckBox17;
+        public CusCheckBox cusCheckBox18;
+        public System.Windows.Forms.GroupBox lianHaoGpb;
+        public CusCheckBox cusCheckBox19;
+        public System.Windows.Forms.Button button4;
+        public CusCheckBox cusCheckBox21;
+        public CusCheckBox cusCheckBox22;
+        public CusCheckBox cusCheckBox23;
+        public CusCheckBox cusCheckBox24;
+        public System.Windows.Forms.GroupBox haoMaPeiZhiGpb;
+        public System.Windows.Forms.GroupBox zhengWeiGpb;
+        public CusCheckBox cusCheckBox34;
+        public System.Windows.Forms.Button button7;
+        public CusCheckBox cusCheckBox35;
+        public CusCheckBox cusCheckBox36;
+        public CusCheckBox cusCheckBox37;
+        public CusCheckBox cusCheckBox38;
+        public System.Windows.Forms.GroupBox niWeiGpb;
+        public CusCheckBox cusCheckBox29;
+        public System.Windows.Forms.Button button6;
+        public CusCheckBox cusCheckBox30;
+        public CusCheckBox cusCheckBox31;
+        public CusCheckBox cusCheckBox32;
+        public CusCheckBox cusCheckBox33;
+        public System.Windows.Forms.GroupBox sanDuGpb;
+        public CusCheckBox cusCheckBox41;
+        public System.Windows.Forms.Button button8;
+        public CusCheckBox cusCheckBox43;
+        public CusCheckBox cusCheckBox44;
+        public CusCheckBox cusCheckBox45;
+        public CusCheckBox cusCheckBox46;
+        public CusCheckBox cusCheckBox47;
+        public CusCheckBox cusCheckBox42;
+        public System.Windows.Forms.GroupBox duanShuGpb;
+        public CusCheckBox cusCheckBox20;
+        public System.Windows.Forms.Button button5;
+        public CusCheckBox cusCheckBox27;
+        public CusCheckBox cusCheckBox28;
+        public System.Windows.Forms.GroupBox pingHengGpb;
+        public CusCheckBox pingHeng_Zheng;
+        public CusCheckBox pingHeng_Fu;
+        public CusCheckBox pingHeng_Deng;
+        public CusCheckBox pingHengChu0;
+        public CusCheckBox pingHengChu1;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.GroupBox pingHengGuiJiGpb;
+        public CusCheckBox phgj_Zheng;
+        public CusCheckBox phgj_Fu;
+        public CusCheckBox phgj_Deng;
+        public System.Windows.Forms.GroupBox lianHaoGuiJiGpb;
+        public CusCheckBox lhgjChu0;
+        public CusCheckBox lhgjChu1;
+        public System.Windows.Forms.Label label7;
+        public CusCheckBox lhgj_Zheng;
+        public CusCheckBox lhgj_Fu;
+        public CusCheckBox lhgj_Deng;
+        public CusCheckBox phgj_Xing;
 
     }
 }

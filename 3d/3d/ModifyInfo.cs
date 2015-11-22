@@ -186,7 +186,7 @@ namespace _3d
         {
             this.textBox1.Text = Global.user_name;
 
-            DataTable dt1 = LinkMySql.MySqlQuery("select user_realname,user_id,user_phone,user_qq,user_province from "+Global.sqlUserTable+" where user_name='" + Global.user_name + "'");
+            DataTable dt1 = LinkMySql.MySqlQuery("select user_realname,user_bankAccount,user_id,user_phone,user_qq,user_province from " + Global.sqlUserTable + " where user_name='" + Global.user_name + "'");
             DataRow dr1 = dt1.Rows[0];
             string user_realname = dr1["user_realname"].ToString();
             if (user_realname == null || user_realname.Equals(""))
@@ -224,6 +224,7 @@ namespace _3d
             this.textBox5.Text = user_id;
             this.textBox9.Text = dr1["user_phone"].ToString();
             this.textBox10.Text = dr1["user_qq"].ToString();
+            this.bankAccount.Text = dr1["user_bankAccount"].ToString();
 
             if (Global.user_vali.Equals("3") || Global.user_vali.Equals("4"))
             {

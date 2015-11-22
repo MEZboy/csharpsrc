@@ -23,7 +23,7 @@ namespace _3d
         /// </summary>
         public static bool isNormalStatus = true;
 
-        public static string soft_server_url = "http://eztx.eztx.cn/other_soft";
+        public static string soft_server_url = "http://eztx.sinaapp.com/other_soft";
         public static string version = string.Empty;//当前软件版本
         public static string sqlAddress = string.Empty;//数据库地址
         public static string sqlPort = string.Empty;//数据库端口

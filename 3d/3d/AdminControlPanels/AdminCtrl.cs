@@ -209,6 +209,7 @@ namespace _3d
             this.yewuButton.Visible = true;
             this.marketButton.Visible = true;
             this.sdXuButton.Visible = true;
+            this.setAllOffLine.Visible = true;
         }
 
         //禁用第一个选项卡下面的选项控件
@@ -235,6 +236,7 @@ namespace _3d
             this.yewuButton.Visible = false;
             this.marketButton.Visible = false;
             this.sdXuButton.Visible = false;
+            this.setAllOffLine.Visible = false;
         }
 
         //第一个选项卡中的“修改”按钮事件
@@ -308,7 +310,7 @@ namespace _3d
         private void dgvGetInfoSqlExecute(string where)
         {
             //设定给datagridview的select列名
-            string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_id as '身份证号',user_phone as '手机/电话',user_qq as 'QQ/MSN',user_province as '所在地区'," +
+            string displaySqlSelect = "user_name as '用户名',user_realname as '姓名',user_bankAccount as '银行账号',user_id as '身份证号',user_phone as '手机/电话',user_qq as 'QQ/MSN',user_province as '所在地区'," +
             "CASE user_vali when '1' then'总代理' when '3' then '省级代理' when '4' then '市级代理' when '5' then '区域代理' when '6' then '市场专员' when '7' then '业务员' when '8' then '省代（虚）' ELSE '普通用户' end AS '用户权限'," +
             "CASE allowlogin when '1' then'是' ELSE'否' end AS '允许登录',machinecode as '机器码',lastloginplace as '上次登录地点',lastlogintime as '上次登录时间'," +
             "registplace as '注册地点',registtime as '注册时间',case online when '1' then '用户在线' when '2' then '机器在线' else '离线' end as '当前是否在线',`content` as '用户备注',parent_realname as '区域领导'," +
@@ -659,6 +661,7 @@ namespace _3d
             ToMD5 md5 = new ToMD5();//将密码加密为md5
             user_pass = md5.Encrypt(user_pass);
             string user_realname = textBox4.Text;
+            string user_bankAccount = bankAccount.Text.Trim();
             string user_id = textBox5.Text;
             string user_phone = textBox9.Text;
             string user_qq = textBox10.Text;
@@ -684,7 +687,7 @@ namespace _3d
                 DataTable dtMCode = LinkMySql.MySqlQuery("select * from " + Global.sqlUserTable + " where user_name='" + user_name + "'");
                 if (dtMCode.Rows.Count == 0)
                 {
-                    int res = LinkMySql.MySqlExcute("insert into " + Global.sqlUserTable + "(user_name,user_pass,user_realname,user_id,user_phone,user_qq,user_province,allowlogin,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + allowlogin + "','" + machinecode + "','" + registtime + "','" + registplace + "')");
+                    int res = LinkMySql.MySqlExcute("insert into " + Global.sqlUserTable + "(user_name,user_pass,user_realname,user_bankAccount,user_id,user_phone,user_qq,user_province,allowlogin,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_bankAccount + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + allowlogin + "','" + machinecode + "','" + registtime + "','" + registplace + "')");
                     if (res == 0)
                     {
                         MessageBox.Show("添加失败，请检查输入然后重试此操作。", "提示");
@@ -907,6 +910,16 @@ namespace _3d
 
         #endregion
 
-
+        private void button12_Click(object sender, EventArgs e)
+        {
+            int res = LinkMySql.MySqlExcute("update user_eztx t set t.allowlogin = '0' where t.user_vali != '1'");
+            if (res == 0)
+            {
+                MessageBox.Show("设置失败，请重试。", "提示");
+                return;
+            }
+            MessageBox.Show("设置成功", "温馨提示");
+            dgvGetInfo();
+        }
     }
 }

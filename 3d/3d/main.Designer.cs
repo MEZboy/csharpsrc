@@ -44,21 +44,38 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pageTwoBtn = new System.Windows.Forms.Button();
+            this.pageOneBtn = new System.Windows.Forms.Button();
             this.marqueePanel = new System.Windows.Forms.Panel();
             this.marqueeLabel = new System.Windows.Forms.Label();
             this.computingButton = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.changeMainPanelCbx = new System.Windows.Forms.ComboBox();
             this.clearButton = new System.Windows.Forms.Button();
+            this.beiTou = new System.Windows.Forms.TabPage();
+            this.beiTouCalDisplay = new System.Windows.Forms.ListView();
+            this.liRunLvLbl = new System.Windows.Forms.Label();
+            this.liRunLv = new CoolSoft.UI.NumericUpDownEx();
+            this.quanChengZhuiHaoLbl = new System.Windows.Forms.Label();
+            this.danZhuZhongJiangLbl = new System.Windows.Forms.Label();
+            this.danZhuJinELbl = new System.Windows.Forms.Label();
+            this.quanChengZhuiHao = new CoolSoft.UI.NumericUpDownEx();
+            this.danZhuZhongJiang = new CoolSoft.UI.NumericUpDownEx();
+            this.danZhuJinE = new CoolSoft.UI.NumericUpDownEx();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.zstWebBrowser = new System.Windows.Forms.WebBrowser();
             this.marqueeTimer = new System.Windows.Forms.Timer(this.components);
             this.offlineUserTimer = new System.Windows.Forms.Timer(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             this.customTabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.marqueePanel.SuspendLayout();
+            this.beiTou.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.liRunLv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanChengZhuiHao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danZhuZhongJiang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danZhuJinE)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +91,9 @@
             // 
             this.customTabControl1.Controls.Add(this.tabPage2);
             this.customTabControl1.Controls.Add(this.tabPage3);
+            this.customTabControl1.Controls.Add(this.beiTou);
             this.customTabControl1.Controls.Add(this.tabPage1);
+            this.customTabControl1.DisplayStyle = System.Windows.Forms.TabStyle.Angled;
             // 
             // 
             // 
@@ -82,21 +101,21 @@
             this.customTabControl1.DisplayStyleProvider.BorderColorHot = System.Drawing.SystemColors.ControlDark;
             this.customTabControl1.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
             this.customTabControl1.DisplayStyleProvider.CloserColor = System.Drawing.Color.DarkGray;
-            this.customTabControl1.DisplayStyleProvider.FocusColor = System.Drawing.Color.Transparent;
-            this.customTabControl1.DisplayStyleProvider.FocusColor2 = System.Drawing.Color.Transparent;
-            this.customTabControl1.DisplayStyleProvider.FocusTrack = true;
+            this.customTabControl1.DisplayStyleProvider.FocusColor2 = System.Drawing.SystemColors.Window;
+            this.customTabControl1.DisplayStyleProvider.FocusTrack = false;
             this.customTabControl1.DisplayStyleProvider.HotTrack = true;
-            this.customTabControl1.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customTabControl1.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.customTabControl1.DisplayStyleProvider.Opacity = 1F;
-            this.customTabControl1.DisplayStyleProvider.Overlap = 0;
-            this.customTabControl1.DisplayStyleProvider.Padding = new System.Drawing.Point(16, 3);
-            this.customTabControl1.DisplayStyleProvider.Radius = 2;
+            this.customTabControl1.DisplayStyleProvider.Overlap = 7;
+            this.customTabControl1.DisplayStyleProvider.Padding = new System.Drawing.Point(10, 3);
+            this.customTabControl1.DisplayStyleProvider.Radius = 10;
             this.customTabControl1.DisplayStyleProvider.ShowTabCloser = false;
-            this.customTabControl1.DisplayStyleProvider.TabBackColorSelect = System.Drawing.Color.WhiteSmoke;
+            this.customTabControl1.DisplayStyleProvider.TabBackColorSelect = System.Drawing.Color.White;
             this.customTabControl1.DisplayStyleProvider.TabFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.customTabControl1.DisplayStyleProvider.TabFontSelect = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.customTabControl1.DisplayStyleProvider.TextColor = System.Drawing.Color.DarkBlue;
-            this.customTabControl1.DisplayStyleProvider.TextColorSelected = System.Drawing.Color.DarkBlue;
+            this.customTabControl1.DisplayStyleProvider.TextColor = System.Drawing.SystemColors.ControlText;
+            this.customTabControl1.DisplayStyleProvider.TextColorDisabled = System.Drawing.SystemColors.ControlDark;
+            this.customTabControl1.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
             this.customTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customTabControl1.HotTrack = true;
             this.customTabControl1.Location = new System.Drawing.Point(0, 0);
@@ -245,17 +264,48 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage3.Controls.Add(this.pageTwoBtn);
+            this.tabPage3.Controls.Add(this.pageOneBtn);
             this.tabPage3.Controls.Add(this.marqueePanel);
             this.tabPage3.Controls.Add(this.computingButton);
             this.tabPage3.Controls.Add(this.mainPanel);
-            this.tabPage3.Controls.Add(this.changeMainPanelCbx);
             this.tabPage3.Controls.Add(this.clearButton);
             this.tabPage3.Location = new System.Drawing.Point(4, 23);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(904, 540);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "十一选五（测试阶段）";
+            this.tabPage3.Text = "十一选五 - 十一运夺金";
+            // 
+            // pageTwoBtn
+            // 
+            this.pageTwoBtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.pageTwoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pageTwoBtn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pageTwoBtn.ForeColor = System.Drawing.Color.DarkBlue;
+            this.pageTwoBtn.Location = new System.Drawing.Point(124, 56);
+            this.pageTwoBtn.Name = "pageTwoBtn";
+            this.pageTwoBtn.Size = new System.Drawing.Size(112, 25);
+            this.pageTwoBtn.TabIndex = 30;
+            this.pageTwoBtn.Text = "二、其他选项";
+            this.pageTwoBtn.UseVisualStyleBackColor = false;
+            this.pageTwoBtn.Click += new System.EventHandler(this.pageTwoBtn_Click);
+            this.pageTwoBtn.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pageTwoBtn_MouseMove);
+            // 
+            // pageOneBtn
+            // 
+            this.pageOneBtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.pageOneBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.pageOneBtn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pageOneBtn.ForeColor = System.Drawing.Color.DarkBlue;
+            this.pageOneBtn.Location = new System.Drawing.Point(6, 56);
+            this.pageOneBtn.Name = "pageOneBtn";
+            this.pageOneBtn.Size = new System.Drawing.Size(112, 25);
+            this.pageOneBtn.TabIndex = 29;
+            this.pageOneBtn.Text = "一、基础选项";
+            this.pageOneBtn.UseVisualStyleBackColor = false;
+            this.pageOneBtn.Click += new System.EventHandler(this.pageOneBtn_Click);
+            this.pageOneBtn.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pageOneBtn_MouseMove);
             // 
             // marqueePanel
             // 
@@ -302,22 +352,6 @@
             this.mainPanel.Size = new System.Drawing.Size(906, 459);
             this.mainPanel.TabIndex = 26;
             // 
-            // changeMainPanelCbx
-            // 
-            this.changeMainPanelCbx.BackColor = System.Drawing.Color.YellowGreen;
-            this.changeMainPanelCbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.changeMainPanelCbx.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.changeMainPanelCbx.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.changeMainPanelCbx.ForeColor = System.Drawing.Color.DarkBlue;
-            this.changeMainPanelCbx.FormattingEnabled = true;
-            this.changeMainPanelCbx.Items.AddRange(new object[] {
-            "页面一   -   基础选项    -   号码组出号"});
-            this.changeMainPanelCbx.Location = new System.Drawing.Point(6, 56);
-            this.changeMainPanelCbx.Name = "changeMainPanelCbx";
-            this.changeMainPanelCbx.Size = new System.Drawing.Size(895, 25);
-            this.changeMainPanelCbx.TabIndex = 27;
-            this.changeMainPanelCbx.SelectedIndexChanged += new System.EventHandler(this.changeMainPanelCbx_SelectedIndexChanged);
-            // 
             // clearButton
             // 
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -331,6 +365,117 @@
             this.clearButton.Text = "清空";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
+            // beiTou
+            // 
+            this.beiTou.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.beiTou.Controls.Add(this.button3);
+            this.beiTou.Controls.Add(this.beiTouCalDisplay);
+            this.beiTou.Controls.Add(this.liRunLvLbl);
+            this.beiTou.Controls.Add(this.liRunLv);
+            this.beiTou.Controls.Add(this.quanChengZhuiHaoLbl);
+            this.beiTou.Controls.Add(this.danZhuZhongJiangLbl);
+            this.beiTou.Controls.Add(this.danZhuJinELbl);
+            this.beiTou.Controls.Add(this.quanChengZhuiHao);
+            this.beiTou.Controls.Add(this.danZhuZhongJiang);
+            this.beiTou.Controls.Add(this.danZhuJinE);
+            this.beiTou.Location = new System.Drawing.Point(4, 23);
+            this.beiTou.Name = "beiTou";
+            this.beiTou.Size = new System.Drawing.Size(904, 540);
+            this.beiTou.TabIndex = 3;
+            this.beiTou.Text = "倍投计算器";
+            // 
+            // beiTouCalDisplay
+            // 
+            this.beiTouCalDisplay.Location = new System.Drawing.Point(31, 25);
+            this.beiTouCalDisplay.Name = "beiTouCalDisplay";
+            this.beiTouCalDisplay.Size = new System.Drawing.Size(540, 420);
+            this.beiTouCalDisplay.TabIndex = 8;
+            this.beiTouCalDisplay.UseCompatibleStateImageBehavior = false;
+            // 
+            // liRunLvLbl
+            // 
+            this.liRunLvLbl.AutoSize = true;
+            this.liRunLvLbl.Location = new System.Drawing.Point(602, 322);
+            this.liRunLvLbl.Name = "liRunLvLbl";
+            this.liRunLvLbl.Size = new System.Drawing.Size(41, 12);
+            this.liRunLvLbl.TabIndex = 7;
+            this.liRunLvLbl.Text = "利润率";
+            // 
+            // liRunLv
+            // 
+            this.liRunLv.Location = new System.Drawing.Point(668, 320);
+            this.liRunLv.Maximum = new decimal(new int[] {
+            99999999,
+            0,
+            0,
+            0});
+            this.liRunLv.Name = "liRunLv";
+            this.liRunLv.Size = new System.Drawing.Size(120, 21);
+            this.liRunLv.TabIndex = 6;
+            // 
+            // quanChengZhuiHaoLbl
+            // 
+            this.quanChengZhuiHaoLbl.AutoSize = true;
+            this.quanChengZhuiHaoLbl.Location = new System.Drawing.Point(602, 249);
+            this.quanChengZhuiHaoLbl.Name = "quanChengZhuiHaoLbl";
+            this.quanChengZhuiHaoLbl.Size = new System.Drawing.Size(53, 12);
+            this.quanChengZhuiHaoLbl.TabIndex = 5;
+            this.quanChengZhuiHaoLbl.Text = "全程追号";
+            // 
+            // danZhuZhongJiangLbl
+            // 
+            this.danZhuZhongJiangLbl.AutoSize = true;
+            this.danZhuZhongJiangLbl.Location = new System.Drawing.Point(602, 177);
+            this.danZhuZhongJiangLbl.Name = "danZhuZhongJiangLbl";
+            this.danZhuZhongJiangLbl.Size = new System.Drawing.Size(53, 12);
+            this.danZhuZhongJiangLbl.TabIndex = 4;
+            this.danZhuZhongJiangLbl.Text = "单注中奖";
+            // 
+            // danZhuJinELbl
+            // 
+            this.danZhuJinELbl.AutoSize = true;
+            this.danZhuJinELbl.Location = new System.Drawing.Point(602, 109);
+            this.danZhuJinELbl.Name = "danZhuJinELbl";
+            this.danZhuJinELbl.Size = new System.Drawing.Size(53, 12);
+            this.danZhuJinELbl.TabIndex = 3;
+            this.danZhuJinELbl.Text = "单注金额";
+            // 
+            // quanChengZhuiHao
+            // 
+            this.quanChengZhuiHao.Location = new System.Drawing.Point(668, 240);
+            this.quanChengZhuiHao.Maximum = new decimal(new int[] {
+            99999999,
+            0,
+            0,
+            0});
+            this.quanChengZhuiHao.Name = "quanChengZhuiHao";
+            this.quanChengZhuiHao.Size = new System.Drawing.Size(120, 21);
+            this.quanChengZhuiHao.TabIndex = 2;
+            // 
+            // danZhuZhongJiang
+            // 
+            this.danZhuZhongJiang.Location = new System.Drawing.Point(668, 175);
+            this.danZhuZhongJiang.Maximum = new decimal(new int[] {
+            99999999,
+            0,
+            0,
+            0});
+            this.danZhuZhongJiang.Name = "danZhuZhongJiang";
+            this.danZhuZhongJiang.Size = new System.Drawing.Size(120, 21);
+            this.danZhuZhongJiang.TabIndex = 1;
+            // 
+            // danZhuJinE
+            // 
+            this.danZhuJinE.Location = new System.Drawing.Point(668, 109);
+            this.danZhuJinE.Maximum = new decimal(new int[] {
+            99999999,
+            0,
+            0,
+            0});
+            this.danZhuJinE.Name = "danZhuJinE";
+            this.danZhuJinE.Size = new System.Drawing.Size(120, 21);
+            this.danZhuJinE.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -363,6 +508,15 @@
             this.offlineUserTimer.Interval = 1800000;
             this.offlineUserTimer.Tick += new System.EventHandler(this.offlineUserTimer_Tick);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(636, 411);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -386,6 +540,12 @@
             this.tabPage3.ResumeLayout(false);
             this.marqueePanel.ResumeLayout(false);
             this.marqueePanel.PerformLayout();
+            this.beiTou.ResumeLayout(false);
+            this.beiTou.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.liRunLv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanChengZhuiHao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danZhuZhongJiang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danZhuJinE)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -408,7 +568,6 @@
         private System.Windows.Forms.Label marqueeLabel;
         private System.Windows.Forms.Button computingButton;
         private System.Windows.Forms.Panel mainPanel;
-        private System.Windows.Forms.ComboBox changeMainPanelCbx;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Timer marqueeTimer;
         private System.Windows.Forms.Timer offlineUserTimer;
@@ -417,5 +576,18 @@
         private System.Windows.Forms.Button changeButton1;
         private System.Windows.Forms.Button changeButton4;
         private System.Windows.Forms.WebBrowser zstWebBrowser;
+        private System.Windows.Forms.Button pageTwoBtn;
+        private System.Windows.Forms.Button pageOneBtn;
+        private System.Windows.Forms.TabPage beiTou;
+        private System.Windows.Forms.Label liRunLvLbl;
+        private System.Windows.Forms.Label quanChengZhuiHaoLbl;
+        private System.Windows.Forms.Label danZhuZhongJiangLbl;
+        private System.Windows.Forms.Label danZhuJinELbl;
+        private CoolSoft.UI.NumericUpDownEx quanChengZhuiHao;
+        private CoolSoft.UI.NumericUpDownEx danZhuZhongJiang;
+        private CoolSoft.UI.NumericUpDownEx danZhuJinE;
+        private CoolSoft.UI.NumericUpDownEx liRunLv;
+        private System.Windows.Forms.ListView beiTouCalDisplay;
+        private System.Windows.Forms.Button button3;
     }
 }

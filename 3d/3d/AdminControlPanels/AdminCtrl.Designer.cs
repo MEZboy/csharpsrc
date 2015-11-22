@@ -41,6 +41,7 @@
             this.searchButton = new System.Windows.Forms.Button();
             this.searchInput = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.sdXuButton = new System.Windows.Forms.Button();
             this.yewuButton = new System.Windows.Forms.Button();
             this.marketButton = new System.Windows.Forms.Button();
             this.qyButton = new System.Windows.Forms.Button();
@@ -68,20 +69,12 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -102,7 +95,18 @@
             this.label25 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.sdXuButton = new System.Windows.Forms.Button();
+            this.bankAccount = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.setAllOffLine = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -261,6 +265,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.setAllOffLine);
             this.panel1.Controls.Add(this.sdXuButton);
             this.panel1.Controls.Add(this.yewuButton);
             this.panel1.Controls.Add(this.marketButton);
@@ -289,6 +294,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(780, 176);
             this.panel1.TabIndex = 23;
+            // 
+            // sdXuButton
+            // 
+            this.sdXuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sdXuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sdXuButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sdXuButton.Location = new System.Drawing.Point(696, 76);
+            this.sdXuButton.Name = "sdXuButton";
+            this.sdXuButton.Size = new System.Drawing.Size(77, 29);
+            this.sdXuButton.TabIndex = 33;
+            this.sdXuButton.Text = "省代(虚)";
+            this.sdXuButton.UseVisualStyleBackColor = true;
+            this.sdXuButton.Visible = false;
+            this.sdXuButton.Click += new System.EventHandler(this.sdXuButton_Click);
             // 
             // yewuButton
             // 
@@ -569,6 +588,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Silver;
+            this.tabPage2.Controls.Add(this.label29);
+            this.tabPage2.Controls.Add(this.bankAccount);
+            this.tabPage2.Controls.Add(this.label30);
             this.tabPage2.Controls.Add(this.label21);
             this.tabPage2.Controls.Add(this.radioButton2);
             this.tabPage2.Controls.Add(this.radioButton1);
@@ -612,7 +634,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Location = new System.Drawing.Point(342, 272);
+            this.label21.Location = new System.Drawing.Point(342, 299);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(77, 12);
             this.label21.TabIndex = 67;
@@ -623,7 +645,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton2.Location = new System.Drawing.Point(295, 265);
+            this.radioButton2.Location = new System.Drawing.Point(295, 292);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(41, 24);
             this.radioButton2.TabIndex = 66;
@@ -636,7 +658,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton1.Location = new System.Drawing.Point(248, 265);
+            this.radioButton1.Location = new System.Drawing.Point(248, 292);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(41, 24);
             this.radioButton1.TabIndex = 65;
@@ -649,7 +671,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(120, 265);
+            this.label12.Location = new System.Drawing.Point(120, 292);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(106, 21);
             this.label12.TabIndex = 64;
@@ -657,44 +679,14 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(247, 235);
+            this.textBox3.Location = new System.Drawing.Point(247, 262);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(226, 21);
             this.textBox3.TabIndex = 63;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(479, 239);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 12);
-            this.label6.TabIndex = 62;
-            this.label6.Text = "注:带*号的为必填项";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Location = new System.Drawing.Point(391, 187);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(107, 12);
-            this.label20.TabIndex = 61;
-            this.label20.Text = "请输入QQ号或MSN号";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Location = new System.Drawing.Point(391, 159);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(101, 12);
-            this.label19.TabIndex = 60;
-            this.label19.Text = "请输入真实手机号";
-            // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(247, 181);
+            this.textBox10.Location = new System.Drawing.Point(247, 208);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(132, 21);
             this.textBox10.TabIndex = 41;
@@ -704,7 +696,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(120, 181);
+            this.label18.Location = new System.Drawing.Point(120, 208);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(81, 21);
             this.label18.TabIndex = 59;
@@ -712,7 +704,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(247, 154);
+            this.textBox9.Location = new System.Drawing.Point(247, 181);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(132, 21);
             this.textBox9.TabIndex = 40;
@@ -722,7 +714,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(120, 154);
+            this.label17.Location = new System.Drawing.Point(120, 181);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(81, 21);
             this.label17.TabIndex = 58;
@@ -733,7 +725,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(120, 235);
+            this.label16.Location = new System.Drawing.Point(120, 262);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(58, 21);
             this.label16.TabIndex = 56;
@@ -746,7 +738,7 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(373, 303);
+            this.button3.Location = new System.Drawing.Point(373, 330);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(68, 29);
             this.button3.TabIndex = 46;
@@ -754,62 +746,12 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Location = new System.Drawing.Point(479, 214);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(137, 12);
-            this.label15.TabIndex = 55;
-            this.label15.Text = "直辖市只需填写城市即可";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(391, 133);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(257, 12);
-            this.label14.TabIndex = 54;
-            this.label14.Text = "请输入真实身份证号，这是找回密码的重要依据";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(385, 105);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(251, 12);
-            this.label13.TabIndex = 53;
-            this.label13.Text = "*请输入真实用户名，这是找回密码的重要依据";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(386, 79);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(185, 12);
-            this.label11.TabIndex = 51;
-            this.label11.Text = "*登录所用的密码，默认为:123456";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(385, 53);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(299, 12);
-            this.label10.TabIndex = 50;
-            this.label10.Text = "*登录所用的用户名，只能是英文或者数字或者两者结合";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(447, 208);
+            this.label9.Location = new System.Drawing.Point(447, 235);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 21);
             this.label9.TabIndex = 49;
@@ -817,7 +759,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(363, 208);
+            this.textBox6.Location = new System.Drawing.Point(363, 235);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(78, 21);
             this.textBox6.TabIndex = 45;
@@ -828,7 +770,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(331, 208);
+            this.label8.Location = new System.Drawing.Point(331, 235);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(26, 21);
             this.label8.TabIndex = 47;
@@ -836,7 +778,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(247, 208);
+            this.textBox7.Location = new System.Drawing.Point(247, 235);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(78, 21);
             this.textBox7.TabIndex = 44;
@@ -847,7 +789,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(120, 208);
+            this.label7.Location = new System.Drawing.Point(120, 236);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 21);
             this.label7.TabIndex = 43;
@@ -855,9 +797,9 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(247, 127);
+            this.textBox5.Location = new System.Drawing.Point(247, 154);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 21);
+            this.textBox5.Size = new System.Drawing.Size(196, 21);
             this.textBox5.TabIndex = 38;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
@@ -866,7 +808,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(120, 127);
+            this.label5.Location = new System.Drawing.Point(120, 154);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 21);
             this.label5.TabIndex = 42;
@@ -1006,19 +948,128 @@
             this.label24.TabIndex = 0;
             this.label24.Text = "登录界面公告";
             // 
-            // sdXuButton
+            // bankAccount
             // 
-            this.sdXuButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sdXuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sdXuButton.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sdXuButton.Location = new System.Drawing.Point(696, 76);
-            this.sdXuButton.Name = "sdXuButton";
-            this.sdXuButton.Size = new System.Drawing.Size(77, 29);
-            this.sdXuButton.TabIndex = 33;
-            this.sdXuButton.Text = "省代(虚)";
-            this.sdXuButton.UseVisualStyleBackColor = true;
-            this.sdXuButton.Visible = false;
-            this.sdXuButton.Click += new System.EventHandler(this.sdXuButton_Click);
+            this.bankAccount.Location = new System.Drawing.Point(247, 127);
+            this.bankAccount.MaxLength = 19;
+            this.bankAccount.Name = "bankAccount";
+            this.bankAccount.Size = new System.Drawing.Size(196, 21);
+            this.bankAccount.TabIndex = 68;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label30.Location = new System.Drawing.Point(120, 127);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(74, 21);
+            this.label30.TabIndex = 69;
+            this.label30.Text = "银行账号";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Location = new System.Drawing.Point(391, 186);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(101, 12);
+            this.label19.TabIndex = 60;
+            this.label19.Text = "请输入真实手机号";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Location = new System.Drawing.Point(391, 214);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(107, 12);
+            this.label20.TabIndex = 61;
+            this.label20.Text = "请输入QQ号或MSN号";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Location = new System.Drawing.Point(385, 52);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(299, 12);
+            this.label10.TabIndex = 50;
+            this.label10.Text = "*登录所用的用户名，只能是英文或者数字或者两者结合";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Location = new System.Drawing.Point(386, 78);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(185, 12);
+            this.label11.TabIndex = 51;
+            this.label11.Text = "*登录所用的密码，默认为:123456";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Location = new System.Drawing.Point(385, 104);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(251, 12);
+            this.label13.TabIndex = 53;
+            this.label13.Text = "*请输入真实用户名，这是找回密码的重要依据";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Location = new System.Drawing.Point(449, 162);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(257, 12);
+            this.label14.TabIndex = 54;
+            this.label14.Text = "请输入真实身份证号，这是找回密码的重要依据";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Location = new System.Drawing.Point(479, 240);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(137, 12);
+            this.label15.TabIndex = 55;
+            this.label15.Text = "直辖市只需填写城市即可";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(479, 265);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(113, 12);
+            this.label6.TabIndex = 62;
+            this.label6.Text = "注:带*号的为必填项";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Location = new System.Drawing.Point(449, 131);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(83, 12);
+            this.label29.TabIndex = 70;
+            this.label29.Text = "*确保提现成功";
+            // 
+            // setAllOffLine
+            // 
+            this.setAllOffLine.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.setAllOffLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.setAllOffLine.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.setAllOffLine.Location = new System.Drawing.Point(5, 143);
+            this.setAllOffLine.Name = "setAllOffLine";
+            this.setAllOffLine.Size = new System.Drawing.Size(80, 29);
+            this.setAllOffLine.TabIndex = 34;
+            this.setAllOffLine.Text = "全部下线";
+            this.setAllOffLine.UseVisualStyleBackColor = true;
+            this.setAllOffLine.Visible = false;
+            this.setAllOffLine.Click += new System.EventHandler(this.button12_Click);
             // 
             // AdminCtrl
             // 
@@ -1062,20 +1113,12 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
@@ -1126,5 +1169,17 @@
         private System.Windows.Forms.Button yewuButton;
         private System.Windows.Forms.Button marketButton;
         private System.Windows.Forms.Button sdXuButton;
+        private System.Windows.Forms.TextBox bankAccount;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button setAllOffLine;
     }
 }

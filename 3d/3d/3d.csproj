@@ -103,6 +103,9 @@
     <Compile Include="AdminControlPanels\AdminCtrl.Designer.cs">
       <DependentUpon>AdminCtrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\NumericUpDownEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Function\ClearMemory.cs" />
     <Compile Include="Function\LinkMyMDB.cs" />
     <Compile Include="Function\LinkMySql.cs" />
@@ -183,6 +186,12 @@
     </Compile>
     <Compile Include="ShiShiCai\page4.designer.cs">
       <DependentUpon>page4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShiYiXuanWu\two11xuan5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiYiXuanWu\two11xuan5.Designer.cs">
+      <DependentUpon>two11xuan5.cs</DependentUpon>
     </Compile>
     <Compile Include="zst.cs">
       <SubType>Form</SubType>
@@ -290,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShiShiCai\page4.resx">
       <DependentUpon>page4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiYiXuanWu\two11xuan5.resx">
+      <DependentUpon>two11xuan5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="zst.resx">
       <DependentUpon>zst.cs</DependentUpon>

@@ -260,12 +260,12 @@ namespace _3d
         //写入数据库
         private void writeToDB()
         {
-
             string user_name = textBox1.Text.Trim();
             string user_pass = textBox2.Text.Trim();
             ToMD5 md5 = new ToMD5();//将密码加密为md5
             user_pass = md5.Encrypt(user_pass);
             string user_realname = textBox4.Text.Trim();
+            string user_bankAccount = bankAccount.Text.Trim();
             string user_id = textBox5.Text.Trim();
             string user_phone = textBox9.Text.Trim();
             string user_qq = textBox10.Text.Trim();
@@ -294,7 +294,7 @@ namespace _3d
 
                 if (dtMCode.Rows.Count == 0)
                 {
-                    LinkMySql.MySqlExcute("insert into "+Global.sqlUserTable+"(user_name,user_pass,user_realname,user_id,user_phone,user_qq,user_province,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + machinecode + "','" + registtime + "','" + getIP.GetWebCity() + "')");
+                    LinkMySql.MySqlExcute("insert into " + Global.sqlUserTable + "(user_name,user_pass,user_realname,user_bankAccount,user_id,user_phone,user_qq,user_province,machinecode,registtime,registplace) values('" + user_name + "','" + user_pass + "','" + user_realname + "','" + user_bankAccount + "','" + user_id + "','" + user_phone + "','" + user_qq + "','" + user_province + "','" + machinecode + "','" + registtime + "','" + getIP.GetWebCity() + "')");
                     MessageBox.Show("申请成功，请联系管理等待开通。", "恭喜");
                     this.Close();
                 }
@@ -304,6 +304,23 @@ namespace _3d
             catch
             {
                 MessageBox.Show("申请失败，请稍后重试！", "温馨提示");
+            }
+        }
+
+        private void bankAccount_TextChanged(object sender, EventArgs e)
+        {
+            if (bankAccount.Text.Trim().Length > 0)
+            {
+                // 將 TextBox1.Text.Trim() 的中文字刪除
+                for (int i = bankAccount.Text.Trim().Length - 1; i >= 0; i--)
+                {
+                    // 利用正則表達式，其中 \u4E00-\u9fa5 表示中文
+                    if (!System.Text.RegularExpressions.Regex.IsMatch(bankAccount.Text.Trim().Substring(i, 1), @"^[A-Za-z0-9]+$"))
+                    {
+                        bankAccount.Text = bankAccount.Text.Trim().Remove(i, 1);
+                    }
+                }
+                bankAccount.SelectionStart = bankAccount.Text.Trim().Length;
             }
         }
     }

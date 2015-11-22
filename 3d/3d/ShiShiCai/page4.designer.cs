@@ -204,7 +204,7 @@
             this.clearMDB.Name = "clearMDB";
             this.clearMDB.Size = new System.Drawing.Size(52, 26);
             this.clearMDB.TabIndex = 22;
-            this.clearMDB.Text = "清空";
+            this.clearMDB.Text = "清";
             this.clearMDB.UseVisualStyleBackColor = true;
             this.clearMDB.Click += new System.EventHandler(this.clearMDB_Click);
             // 
@@ -337,7 +337,7 @@
             this.liangMaChaClearBtn.Name = "liangMaChaClearBtn";
             this.liangMaChaClearBtn.Size = new System.Drawing.Size(89, 40);
             this.liangMaChaClearBtn.TabIndex = 51;
-            this.liangMaChaClearBtn.Text = "清空";
+            this.liangMaChaClearBtn.Text = "清";
             this.liangMaChaClearBtn.UseVisualStyleBackColor = true;
             this.liangMaChaClearBtn.Click += new System.EventHandler(this.liangMaChaClearBtn_Click);
             // 
@@ -1060,7 +1060,7 @@
             this.LiangWeiShuClearBtn.Name = "LiangWeiShuClearBtn";
             this.LiangWeiShuClearBtn.Size = new System.Drawing.Size(89, 40);
             this.LiangWeiShuClearBtn.TabIndex = 53;
-            this.LiangWeiShuClearBtn.Text = "清空";
+            this.LiangWeiShuClearBtn.Text = "清";
             this.LiangWeiShuClearBtn.UseVisualStyleBackColor = true;
             this.LiangWeiShuClearBtn.Click += new System.EventHandler(this.LiangWeiShuClearBtn_Click);
             // 
@@ -1107,7 +1107,7 @@
             this.clear1HaoMaZubtn.Name = "clear1HaoMaZubtn";
             this.clear1HaoMaZubtn.Size = new System.Drawing.Size(64, 23);
             this.clear1HaoMaZubtn.TabIndex = 55;
-            this.clear1HaoMaZubtn.Text = "清空";
+            this.clear1HaoMaZubtn.Text = "清";
             this.clear1HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear1HaoMaZubtn.Click += new System.EventHandler(this.clear1HaoMaZubtn_Click);
             // 
@@ -1339,7 +1339,7 @@
             this.clear2HaoMaZubtn.Name = "clear2HaoMaZubtn";
             this.clear2HaoMaZubtn.Size = new System.Drawing.Size(64, 23);
             this.clear2HaoMaZubtn.TabIndex = 56;
-            this.clear2HaoMaZubtn.Text = "清空";
+            this.clear2HaoMaZubtn.Text = "清";
             this.clear2HaoMaZubtn.UseVisualStyleBackColor = true;
             this.clear2HaoMaZubtn.Click += new System.EventHandler(this.clear2HaoMaZubtn_Click);
             // 
@@ -1567,7 +1567,7 @@
             this.clearShaHaoBtn.Name = "clearShaHaoBtn";
             this.clearShaHaoBtn.Size = new System.Drawing.Size(64, 23);
             this.clearShaHaoBtn.TabIndex = 54;
-            this.clearShaHaoBtn.Text = "清空";
+            this.clearShaHaoBtn.Text = "清";
             this.clearShaHaoBtn.UseVisualStyleBackColor = true;
             this.clearShaHaoBtn.Click += new System.EventHandler(this.clearShaHaoBtn_Click);
             // 
@@ -1802,7 +1802,7 @@
             this.haoMaPaiLieClear.Name = "haoMaPaiLieClear";
             this.haoMaPaiLieClear.Size = new System.Drawing.Size(60, 54);
             this.haoMaPaiLieClear.TabIndex = 51;
-            this.haoMaPaiLieClear.Text = "清空";
+            this.haoMaPaiLieClear.Text = "清";
             this.haoMaPaiLieClear.UseVisualStyleBackColor = true;
             this.haoMaPaiLieClear.Click += new System.EventHandler(this.haoMaPaiLieClear_Click);
             // 
