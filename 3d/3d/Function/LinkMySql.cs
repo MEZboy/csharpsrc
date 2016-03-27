@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Xml;
 using System.Net;
+using System.Text.RegularExpressions;
 
 using MySql.Data.MySqlClient;
 
@@ -18,7 +19,7 @@ namespace _3d.Function
         #region 数据库配置
 
         /// <summary>
-        /// 数据库配置
+        /// 读取数据库配置，加载一些基本信息
         /// </summary>
         public static void getSQLcfg(string serverAddress)
         {
@@ -56,6 +57,43 @@ namespace _3d.Function
             xml.Load(localXmlFile);
             XmlNode xn = xml.SelectSingleNode("//Files/File");
             Global.version = xn.Attributes["Ver"].InnerText;
+
+            // 获取IP地址和归属地
+            getWebIPNew();
+        }
+
+        /// <summary>
+        /// 获取IP地址和归属地
+        /// </summary>
+        /// <returns></returns>
+        public static void getWebIPNew()
+        {
+            try
+            {
+                WebRequest wr = WebRequest.Create("http://eztx.eztx.cn/getIP.html");
+                Stream s = wr.GetResponse().GetResponseStream();
+                StreamReader sr = new StreamReader(s, Encoding.Default);
+                string all = sr.ReadToEnd(); //读取网站的数据
+
+                /*Regex r = new Regex("((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|[1-9])", RegexOptions.None);
+                Match mc = r.Match(all);
+                // 获取匹配到的IP
+                tempip = mc.Groups[0].Value;
+                sr.Close();
+                s.Close();*/
+
+                if (all != null && all.Trim().Length > 0) {
+                    string[] IPinfos = all.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+                    Global.globalIP = IPinfos[0];
+                    Global.globalPlace = IPinfos[1];
+                }
+                sr.Close();
+                s.Close();
+            }
+            catch
+            {
+
+            }
         }
         #endregion
 

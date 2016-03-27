@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.customTabControl1 = new System.Windows.Forms.CustomTabControl();
+            this.mainPages = new System.Windows.Forms.CustomTabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.changeButton4 = new System.Windows.Forms.Button();
             this.changeButton3 = new System.Windows.Forms.Button();
@@ -52,6 +52,7 @@
             this.mainPanel = new System.Windows.Forms.Panel();
             this.clearButton = new System.Windows.Forms.Button();
             this.beiTou = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.beiTouCalDisplay = new System.Windows.Forms.ListView();
             this.liRunLvLbl = new System.Windows.Forms.Label();
             this.liRunLv = new CoolSoft.UI.NumericUpDownEx();
@@ -65,8 +66,7 @@
             this.zstWebBrowser = new System.Windows.Forms.WebBrowser();
             this.marqueeTimer = new System.Windows.Forms.Timer(this.components);
             this.offlineUserTimer = new System.Windows.Forms.Timer(this.components);
-            this.button3 = new System.Windows.Forms.Button();
-            this.customTabControl1.SuspendLayout();
+            this.mainPages.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -87,42 +87,42 @@
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
-            // customTabControl1
+            // mainPages
             // 
-            this.customTabControl1.Controls.Add(this.tabPage2);
-            this.customTabControl1.Controls.Add(this.tabPage3);
-            this.customTabControl1.Controls.Add(this.beiTou);
-            this.customTabControl1.Controls.Add(this.tabPage1);
-            this.customTabControl1.DisplayStyle = System.Windows.Forms.TabStyle.Angled;
+            this.mainPages.Controls.Add(this.tabPage2);
+            this.mainPages.Controls.Add(this.tabPage3);
+            this.mainPages.Controls.Add(this.beiTou);
+            this.mainPages.Controls.Add(this.tabPage1);
+            this.mainPages.DisplayStyle = System.Windows.Forms.TabStyle.Angled;
             // 
             // 
             // 
-            this.customTabControl1.DisplayStyleProvider.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.customTabControl1.DisplayStyleProvider.BorderColorHot = System.Drawing.SystemColors.ControlDark;
-            this.customTabControl1.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
-            this.customTabControl1.DisplayStyleProvider.CloserColor = System.Drawing.Color.DarkGray;
-            this.customTabControl1.DisplayStyleProvider.FocusColor2 = System.Drawing.SystemColors.Window;
-            this.customTabControl1.DisplayStyleProvider.FocusTrack = false;
-            this.customTabControl1.DisplayStyleProvider.HotTrack = true;
-            this.customTabControl1.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.customTabControl1.DisplayStyleProvider.Opacity = 1F;
-            this.customTabControl1.DisplayStyleProvider.Overlap = 7;
-            this.customTabControl1.DisplayStyleProvider.Padding = new System.Drawing.Point(10, 3);
-            this.customTabControl1.DisplayStyleProvider.Radius = 10;
-            this.customTabControl1.DisplayStyleProvider.ShowTabCloser = false;
-            this.customTabControl1.DisplayStyleProvider.TabBackColorSelect = System.Drawing.Color.White;
-            this.customTabControl1.DisplayStyleProvider.TabFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.customTabControl1.DisplayStyleProvider.TabFontSelect = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.customTabControl1.DisplayStyleProvider.TextColor = System.Drawing.SystemColors.ControlText;
-            this.customTabControl1.DisplayStyleProvider.TextColorDisabled = System.Drawing.SystemColors.ControlDark;
-            this.customTabControl1.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
-            this.customTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customTabControl1.HotTrack = true;
-            this.customTabControl1.Location = new System.Drawing.Point(0, 0);
-            this.customTabControl1.Name = "customTabControl1";
-            this.customTabControl1.SelectedIndex = 0;
-            this.customTabControl1.Size = new System.Drawing.Size(912, 567);
-            this.customTabControl1.TabIndex = 0;
+            this.mainPages.DisplayStyleProvider.BorderColor = System.Drawing.SystemColors.ControlDark;
+            this.mainPages.DisplayStyleProvider.BorderColorHot = System.Drawing.SystemColors.ControlDark;
+            this.mainPages.DisplayStyleProvider.BorderColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(185)))));
+            this.mainPages.DisplayStyleProvider.CloserColor = System.Drawing.Color.DarkGray;
+            this.mainPages.DisplayStyleProvider.FocusColor2 = System.Drawing.SystemColors.Window;
+            this.mainPages.DisplayStyleProvider.FocusTrack = false;
+            this.mainPages.DisplayStyleProvider.HotTrack = true;
+            this.mainPages.DisplayStyleProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.mainPages.DisplayStyleProvider.Opacity = 1F;
+            this.mainPages.DisplayStyleProvider.Overlap = 7;
+            this.mainPages.DisplayStyleProvider.Padding = new System.Drawing.Point(10, 3);
+            this.mainPages.DisplayStyleProvider.Radius = 10;
+            this.mainPages.DisplayStyleProvider.ShowTabCloser = false;
+            this.mainPages.DisplayStyleProvider.TabBackColorSelect = System.Drawing.Color.White;
+            this.mainPages.DisplayStyleProvider.TabFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainPages.DisplayStyleProvider.TabFontSelect = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainPages.DisplayStyleProvider.TextColor = System.Drawing.SystemColors.ControlText;
+            this.mainPages.DisplayStyleProvider.TextColorDisabled = System.Drawing.SystemColors.ControlDark;
+            this.mainPages.DisplayStyleProvider.TextColorSelected = System.Drawing.SystemColors.ControlText;
+            this.mainPages.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPages.HotTrack = true;
+            this.mainPages.Location = new System.Drawing.Point(0, 0);
+            this.mainPages.Name = "mainPages";
+            this.mainPages.SelectedIndex = 0;
+            this.mainPages.Size = new System.Drawing.Size(912, 567);
+            this.mainPages.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -385,6 +385,15 @@
             this.beiTou.TabIndex = 3;
             this.beiTou.Text = "倍投计算器";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(636, 411);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // beiTouCalDisplay
             // 
             this.beiTouCalDisplay.Location = new System.Drawing.Point(31, 25);
@@ -508,32 +517,23 @@
             this.offlineUserTimer.Interval = 1800000;
             this.offlineUserTimer.Tick += new System.EventHandler(this.offlineUserTimer_Tick);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(636, 411);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(912, 567);
-            this.Controls.Add(this.customTabControl1);
+            this.Controls.Add(this.mainPages);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "main";
+            this.Text = "界面加载中……";
             this.Load += new System.EventHandler(this.main_Load);
             this.ResizeBegin += new System.EventHandler(this.main_ResizeBegin);
             this.ResizeEnd += new System.EventHandler(this.main_ResizeEnd);
-            this.customTabControl1.ResumeLayout(false);
+            this.mainPages.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -561,7 +561,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.CustomTabControl customTabControl1;
+        private System.Windows.Forms.CustomTabControl mainPages;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel marqueePanel;

@@ -32,5 +32,11 @@ namespace _3d
         public static string sqlDB = string.Empty;//数据库所用库
         public static string sqlCharset = string.Empty;//数据库所用库
         public static string sqlUserTable = string.Empty;//表名，通用表名
+
+
+        // IP地址和归属地
+        public static string globalIP = "127.0.0.1";
+        public static string globalPlace = "未知";
+
     }
 }

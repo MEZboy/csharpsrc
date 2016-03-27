@@ -21,7 +21,6 @@ namespace _3d
         MachineCode mc = new MachineCode();
         
         Thread threadLogin = null;
-        bool startThreadLogin = true;
 
         #region 防止控件或图像过多卡
         [DllImport("user32.dll")]
@@ -86,24 +85,24 @@ namespace _3d
             tLabelMove.Elapsed += new System.Timers.ElapsedEventHandler(time1_Tick);
             tLabelMove.Enabled = true;
 
-            this.label3.Text = "";
-            this.label4.Text = "";
+            this.userNameWarningLbl.Text = "";
+            this.passwordWarningLbl.Text = "";
             this.pictureBox1.Width = this.Width;
             getLoadMsgT();//读取跑马灯信息
             EnableDoubleBuffering();//设定双缓冲
             userXML();//创建用户列表
-            this.textBox1.Text = "";
-            this.textBox2.Text = "";
+            this.userNameTxt.Text = "";
+            this.passwordTxt.Text = "";
             savePass.Checked = false;
 
-            this.textBox1.SelectedIndexChanged += new System.EventHandler(this.textBox1_SelectedIndexChanged);
+            this.userNameTxt.SelectedIndexChanged += new System.EventHandler(this.textBox1_SelectedIndexChanged);
             findUpdate();
         }
 
         private void textBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string valueMember = textBox1.SelectedValue.ToString().Trim();
-            this.textBox2.Text = valueMember;
+            string valueMember = userNameTxt.SelectedValue.ToString().Trim();
+            this.passwordTxt.Text = valueMember;
             if (valueMember.Length > 0)
             {
                 savePass.Checked = true;
@@ -153,9 +152,9 @@ namespace _3d
                     data.Rows.Add(row);
                 }
 
-                this.textBox1.DataSource = data;//数据源为刚建好的表
-                this.textBox1.DisplayMember = "user_name";//设置显示名称为Name
-                this.textBox1.ValueMember = "user_pass";//设置属性值为Code
+                this.userNameTxt.DataSource = data;//数据源为刚建好的表
+                this.userNameTxt.DisplayMember = "user_name";//设置显示名称为Name
+                this.userNameTxt.ValueMember = "user_pass";//设置属性值为Code
 
                 d.Save(url + "\\UserProfile.xml");
                 return;
@@ -194,31 +193,27 @@ namespace _3d
             try
             {
                 //用来终止登录线程
-                while (startThreadLogin)
+                setLoginResult("正在登录中...请稍后");
+                disabledControls();
+
+                string user_name = userNameTxt.Text.Trim();//textBox1.Text.Trim();
+                string user_pass = passwordTxt.Text.Trim();
+                if (loginValidate(user_name, user_pass) == true)
                 {
-                    setLoginResult("正在登录中...请稍后");
-                    disabledControls();
+                    int res = LinkMySql.MySqlExcute("UPDATE " + Global.sqlUserTable +
+                        " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
+                        " where user_name='" + user_name + "'");
 
-                    string user_name = textBox1.Text.Trim();//textBox1.Text.Trim();
-                    string user_pass = textBox2.Text.Trim();
-                    if (loginValidate(user_name, user_pass) == true)
+                    if (res == 0)
                     {
-                        int res = LinkMySql.MySqlExcute("UPDATE " + Global.sqlUserTable +
-                            " SET `online`='1',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
-                            " where user_name='" + user_name + "'");
-
-                        if (res == 0)
-                        {
-                            MessageBox.Show("登录失败，请检查网络连接或者稍后重试。", "友情提示");
-                            return;
-                        }
-
-                        writeToUserXML(user_name, user_pass);//写入到用户配置文件
-                        loginToMain();
+                        MessageBox.Show("登录失败，请检查网络连接或者稍后重试。", "友情提示");
+                        return;
                     }
-                    enabledControls();
-                    startThreadLogin = false;
+
+                    writeToUserXML(user_name, user_pass);//写入到用户配置文件
+                    loginToMain();
                 }
+                enabledControls();
             }
             catch (Exception err)
             {
@@ -341,60 +336,57 @@ namespace _3d
             try
             {
                 //用来终止登录线程
-                while (startThreadLogin)
+                setLoginResult("正在登录中...请稍后");
+                disabledControls();
+                clearControls();
+                string d = mc.GetCpuID();
+                string g = mc.GetMacAddress();
+                string machinecode = d + g;
+                for (int i = 4; i < machinecode.Length; i += 5)
                 {
-                    setLoginResult("正在登录中...请稍后");
-                    disabledControls();
-                    string d = mc.GetCpuID();
-                    string g = mc.GetMacAddress();
-                    string machinecode = d + g;
-                    for (int i = 4; i < machinecode.Length; i += 5)
+                    machinecode = machinecode.Insert(i, "-");
+                }
+
+                DataTable dt1 = LinkMySql.MySqlQuery("select * from " + Global.sqlUserTable + " where machinecode='" + machinecode + "' and registtime=(select min(registtime) from " + Global.sqlUserTable + " where machinecode='" + machinecode + "') and isdel='1'");
+
+                if (dt1 != null && dt1.Rows.Count > 0)
+                {
+                    DataRow dr1 = dt1.Rows[0];
+                    Global.user_name = dr1["user_name"].ToString();
+                    Global.user_realname = dr1["user_realname"].ToString();
+                    Global.user_province = dr1["user_province"].ToString();
+                    Global.user_vali = dr1["user_vali"].ToString();
+                    Global.allowlogin = dr1["allowlogin"].ToString();
+                    Global.loginType = "2";
+
+                    if (dr1["allowlogin"].ToString().Equals("1"))
                     {
-                        machinecode = machinecode.Insert(i, "-");
-                    }
-
-                    DataTable dt1 = LinkMySql.MySqlQuery("select * from " + Global.sqlUserTable + " where machinecode='" + machinecode + "' and registtime=(select min(registtime) from " + Global.sqlUserTable + " where machinecode='" + machinecode + "') and isdel='1'");
-
-                    if (dt1 != null && dt1.Rows.Count > 0)
-                    {
-                        DataRow dr1 = dt1.Rows[0];
-                        Global.user_name = dr1["user_name"].ToString();
-                        Global.user_realname = dr1["user_realname"].ToString();
-                        Global.user_province = dr1["user_province"].ToString();
-                        Global.user_vali = dr1["user_vali"].ToString();
-                        Global.allowlogin = dr1["allowlogin"].ToString();
-                        Global.loginType = "2";
-
-                        if (dr1["allowlogin"].ToString().Equals("1"))
-                        {
-                            string mysql = "UPDATE " + Global.sqlUserTable +
-                                " SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
-                                " where user_name='" + Global.user_name + "'";
-                            int res = LinkMySql.MySqlExcute(mysql);
-                            if (res == 0) {
-                                setLoginResult("登录失败，请稍后重试！");
-                                return;
-                            }
-                            //clearUserProfile();//清空用户配置文档
-                            loginToMain();
+                        string mysql = "UPDATE " + Global.sqlUserTable +
+                            " SET `online`='2',lastloginip='" + getIP.GetWebIP() + "',lastlogintime=now(),lastloginplace='" + getIP.GetWebCity() + "',soft_version='" + Global.version + "',onlinetime=now() " +
+                            " where user_name='" + Global.user_name + "'";
+                        int res = LinkMySql.MySqlExcute(mysql);
+                        if (res == 0) {
+                            setLoginResult("登录失败，请稍后重试！");
+                            return;
                         }
-                        else
-                        {
-                            setLoginResult("您没有使用权限！");
-                        }
+                        //clearUserProfile();//清空用户配置文档
+                        loginToMain();
                     }
                     else
                     {
-                        setLoginResult("请您进行申请，并由管理员为您开通以后再进行此项操作。");
+                        setLoginResult("您没有使用权限！");
                     }
-
-                    enabledControls();
-                    startThreadLogin = false;
                 }
+                else
+                {
+                    setLoginResult("请您进行申请，并由管理员为您开通以后再进行此项操作。");
+                }
+
+                enabledControls();
             }
             catch (Exception err)
             {
-                MessageBox.Show("登录失败，请检查网络连接或者稍后重试。", "友情提示");
+                MessageBox.Show(err.Message, "友情提示");
                 throw err;
             }
         }
@@ -409,26 +401,26 @@ namespace _3d
         {
             if (this.IsHandleCreated)
             {
-                this.label3.Invoke(new WriteLabelText(writeLabel3Text), args);
+                this.userNameWarningLbl.Invoke(new WriteLabelText(writeLabel3Text), args);
             }
         }
 
         private void writeLabel3Text(string args)
         {
-            this.label3.Text = args;
+            this.userNameWarningLbl.Text = args;
         }
 
         private void setLabel4Text(string args)
         {
             if (this.IsHandleCreated)
             {
-                this.label4.Invoke(new WriteLabelText(writeLabel4Text), args);
+                this.passwordWarningLbl.Invoke(new WriteLabelText(writeLabel4Text), args);
             }
         }
 
         private void writeLabel4Text(string args)
         {
-            this.label4.Text = args;
+            this.passwordWarningLbl.Text = args;
         }
 
         private void setLabel5Text(string args)
@@ -519,7 +511,7 @@ namespace _3d
             clearUserProfile();
 
             //清空下拉列表
-            this.textBox1.DataSource = null;//数据源为空
+            this.userNameTxt.DataSource = null;//数据源为空
         }
 
         /// <summary>
@@ -603,15 +595,28 @@ namespace _3d
         }
 
         private delegate void EnabledControls();
+        private delegate void ClearControls();
 
         private void enabledControls()
         {
             _ec(this.button1, new EnabledControls(_enabledLoginButton));
             _ec(this.button3, new EnabledControls(_enabledMachineLoginButton));
             _ec(this.button2, new EnabledControls(_enabledRegistButton));
-            _ec(this.textBox1, new EnabledControls(_enabledUsernameTextbox));
-            _ec(this.textBox2, new EnabledControls(_enabledPasswordTextbox));
+            _ec(this.userNameTxt, new EnabledControls(_enabledUsernameTextbox));
+            _ec(this.passwordTxt, new EnabledControls(_enabledPasswordTextbox));
             _ec(this.savePass, new EnabledControls(_enabledSavepassTextbox));
+        }
+
+        /// <summary>
+        /// 将一些提示复原，以及清空用户名和密码输入框的值
+        /// </summary>
+        private void clearControls()
+        {
+            _ec(this.userNameTxt, new EnabledControls(_clearUsernameTextbox));
+            _ec(this.passwordTxt, new EnabledControls(_clearPasswordTextbox));
+            _ec(this.passwordTxt, new EnabledControls(_clearUserNameWarningLabel));
+            _ec(this.passwordTxt, new EnabledControls(_clearPasswordWarningLabel));
+            _ec(this.passwordTxt, new EnabledControls(_clearSavepassTextbox));
         }
 
         private void _ec(Control ctr,Delegate de)
@@ -650,7 +655,7 @@ namespace _3d
         /// </summary>
         private void _enabledUsernameTextbox()
         {
-            _checkEnabled(this.textBox1);
+            _checkEnabled(this.userNameTxt);
         }
 
         /// <summary>
@@ -658,7 +663,7 @@ namespace _3d
         /// </summary>
         private void _enabledPasswordTextbox()
         {
-            _checkEnabled(this.textBox2);
+            _checkEnabled(this.passwordTxt);
         }
 
         /// <summary>
@@ -667,6 +672,46 @@ namespace _3d
         private void _enabledSavepassTextbox()
         {
             _checkEnabled(this.savePass);
+        }
+
+        /// <summary>
+        /// 清空用户名输入框
+        /// </summary>
+        private void _clearUsernameTextbox()
+        {
+            this.userNameTxt.Text = "";
+        }
+
+        /// <summary>
+        /// 清空密码输入框
+        /// </summary>
+        private void _clearPasswordTextbox()
+        {
+            this.passwordTxt.Text = "";
+        }
+
+        /// <summary>
+        /// 清空保存密码选择框
+        /// </summary>
+        private void _clearSavepassTextbox()
+        {
+            this.savePass.Checked = false;
+        }
+
+        /// <summary>
+        /// 清空用户名警示标语提示
+        /// </summary>
+        private void _clearUserNameWarningLabel()
+        {
+            this.userNameWarningLbl.Text = "";
+        }
+
+        /// <summary>
+        /// 清空密码警示标语提示
+        /// </summary>
+        private void _clearPasswordWarningLabel()
+        {
+            this.passwordWarningLbl.Text = "";
         }
 
         private void _checkEnabled(Control ctr)
@@ -685,8 +730,8 @@ namespace _3d
             _dc(this.button1, new DisabledControls(_disabledLoginButton));
             _dc(this.button3, new DisabledControls(_disabledMachineLoginButton));
             _dc(this.button2, new DisabledControls(_disabledRegistButton));
-            _dc(this.textBox1, new DisabledControls(_disabledUsernameTextbox));
-            _dc(this.textBox2, new DisabledControls(_disabledPasswordTextbox));
+            _dc(this.userNameTxt, new DisabledControls(_disabledUsernameTextbox));
+            _dc(this.passwordTxt, new DisabledControls(_disabledPasswordTextbox));
             _dc(this.savePass, new DisabledControls(_disabledSavepassTextbox));
         }
 
@@ -727,7 +772,7 @@ namespace _3d
         /// </summary>
         private void _disabledUsernameTextbox()
         {
-            _checkDisabled(this.textBox1);
+            _checkDisabled(this.userNameTxt);
         }
 
         /// <summary>
@@ -735,7 +780,7 @@ namespace _3d
         /// </summary>
         private void _disabledPasswordTextbox()
         {
-            _checkDisabled(this.textBox2);
+            _checkDisabled(this.passwordTxt);
         }
 
         /// <summary>
@@ -801,18 +846,18 @@ namespace _3d
         //用户名输入框变更事件
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length > 0)
+            if (userNameTxt.Text.Length > 0)
             {
                 // 將 TextBox1.Text 的中文字刪除
-                for (int i = textBox1.Text.Length - 1; i >= 0; i--)
+                for (int i = userNameTxt.Text.Length - 1; i >= 0; i--)
                 {
                     // 利用正則表達式，其中 \u4E00-\u9fa5 表示中文
-                    if (System.Text.RegularExpressions.Regex.IsMatch(textBox1.Text.Substring(i, 1), @"^[\u4E00-\u9fa5]+$"))
+                    if (System.Text.RegularExpressions.Regex.IsMatch(userNameTxt.Text.Substring(i, 1), @"^[\u4E00-\u9fa5]+$"))
                     {
-                        textBox1.Text = textBox1.Text.Remove(i, 1);
+                        userNameTxt.Text = userNameTxt.Text.Remove(i, 1);
                     }
                 }
-                textBox1.SelectionStart = textBox1.Text.Length;
+                userNameTxt.SelectionStart = userNameTxt.Text.Length;
             }
             setLabel3Text("");
         }
@@ -886,7 +931,7 @@ namespace _3d
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
-            this.textBox2.Text = "";
+            this.passwordTxt.Text = "";
             savePass.Checked = false;
         }
 

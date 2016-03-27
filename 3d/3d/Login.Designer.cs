@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.passwordTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.userNameWarningLbl = new System.Windows.Forms.Label();
+            this.passwordWarningLbl = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,10 +53,10 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.ComboBox();
-            this.savePass = new _3d.CusCheckBox();
+            this.userNameTxt = new System.Windows.Forms.ComboBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.用户名登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePass = new _3d.CusCheckBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,18 +77,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "用户名";
             // 
-            // textBox2
+            // passwordTxt
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox2.ImeMode = System.Windows.Forms.ImeMode.Hangul;
-            this.textBox2.Location = new System.Drawing.Point(250, 235);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(99, 29);
-            this.textBox2.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.textBox2, "输入您的密码");
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.passwordTxt.Enabled = false;
+            this.passwordTxt.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.passwordTxt.ImeMode = System.Windows.Forms.ImeMode.Hangul;
+            this.passwordTxt.Location = new System.Drawing.Point(250, 232);
+            this.passwordTxt.Name = "passwordTxt";
+            this.passwordTxt.PasswordChar = '*';
+            this.passwordTxt.Size = new System.Drawing.Size(99, 29);
+            this.passwordTxt.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.passwordTxt, "输入您的密码");
+            this.passwordTxt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -135,27 +135,27 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label3
+            // userNameWarningLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(252, 217);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "提示";
+            this.userNameWarningLbl.AutoSize = true;
+            this.userNameWarningLbl.BackColor = System.Drawing.Color.Transparent;
+            this.userNameWarningLbl.ForeColor = System.Drawing.Color.Red;
+            this.userNameWarningLbl.Location = new System.Drawing.Point(252, 218);
+            this.userNameWarningLbl.Name = "userNameWarningLbl";
+            this.userNameWarningLbl.Size = new System.Drawing.Size(29, 12);
+            this.userNameWarningLbl.TabIndex = 3;
+            this.userNameWarningLbl.Text = "提示";
             // 
-            // label4
+            // passwordWarningLbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(252, 264);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "提示";
+            this.passwordWarningLbl.AutoSize = true;
+            this.passwordWarningLbl.BackColor = System.Drawing.Color.Transparent;
+            this.passwordWarningLbl.ForeColor = System.Drawing.Color.Red;
+            this.passwordWarningLbl.Location = new System.Drawing.Point(252, 264);
+            this.passwordWarningLbl.Name = "passwordWarningLbl";
+            this.passwordWarningLbl.Size = new System.Drawing.Size(29, 12);
+            this.passwordWarningLbl.TabIndex = 3;
+            this.passwordWarningLbl.Text = "提示";
             // 
             // button3
             // 
@@ -318,22 +318,36 @@
             this.toolTip1.SetToolTip(this.pictureBox4, "最小化软件");
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // textBox1
+            // userNameTxt
             // 
-            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.FormattingEnabled = true;
-            this.textBox1.ItemHeight = 21;
-            this.textBox1.Items.AddRange(new object[] {
+            this.userNameTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.userNameTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.userNameTxt.Enabled = false;
+            this.userNameTxt.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.userNameTxt.FormattingEnabled = true;
+            this.userNameTxt.ItemHeight = 21;
+            this.userNameTxt.Items.AddRange(new object[] {
             ""});
-            this.textBox1.Location = new System.Drawing.Point(250, 190);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(99, 29);
-            this.textBox1.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.textBox1, "输入您的用户名");
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.userNameTxt.Location = new System.Drawing.Point(250, 186);
+            this.userNameTxt.Name = "userNameTxt";
+            this.userNameTxt.Size = new System.Drawing.Size(99, 29);
+            this.userNameTxt.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.userNameTxt, "输入您的用户名");
+            this.userNameTxt.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.用户名登录ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.ShowImageMargin = false;
+            this.contextMenuStrip1.Size = new System.Drawing.Size(112, 26);
+            // 
+            // 用户名登录ToolStripMenuItem
+            // 
+            this.用户名登录ToolStripMenuItem.Name = "用户名登录ToolStripMenuItem";
+            this.用户名登录ToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.用户名登录ToolStripMenuItem.Text = "用户名登录";
             // 
             // savePass
             // 
@@ -351,20 +365,6 @@
             this.toolTip1.SetToolTip(this.savePass, "免去您每次输入用户名密码带来的不便");
             this.savePass.UseVisualStyleBackColor = false;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.用户名登录ToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.ShowImageMargin = false;
-            this.contextMenuStrip1.Size = new System.Drawing.Size(112, 26);
-            // 
-            // 用户名登录ToolStripMenuItem
-            // 
-            this.用户名登录ToolStripMenuItem.Name = "用户名登录ToolStripMenuItem";
-            this.用户名登录ToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
-            this.用户名登录ToolStripMenuItem.Text = "用户名登录";
-            // 
             // Login
             // 
             this.AcceptButton = this.button1;
@@ -373,7 +373,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(500, 350);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.userNameTxt);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -382,13 +382,13 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.passwordWarningLbl);
+            this.Controls.Add(this.userNameWarningLbl);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -417,12 +417,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox passwordTxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label userNameWarningLbl;
+        private System.Windows.Forms.Label passwordWarningLbl;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
@@ -442,6 +442,6 @@
         private System.Windows.Forms.ToolStripMenuItem 用户名登录ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 常见问题解答ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 关于软件ToolStripMenuItem;
-        private System.Windows.Forms.ComboBox textBox1;
+        private System.Windows.Forms.ComboBox userNameTxt;
     }
 }

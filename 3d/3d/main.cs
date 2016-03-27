@@ -333,6 +333,9 @@ namespace _3d
 
             //倍投计算器页面
             loadBeiTouCal();
+
+            // 隐藏倍投计算器
+            mainPages.TabPages.Remove(mainPages.TabPages[2]);
         }
 
         private void changeButton1_MouseMove(object sender, MouseEventArgs e)
