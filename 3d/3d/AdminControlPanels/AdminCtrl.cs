@@ -95,7 +95,7 @@ namespace _3d
             }
         }
 
-        #region 第一个选项卡
+        #region 第一个选项卡：登录权限
 
         //第一页前面主条件选择框
         private void provinceCbx_SelectedIndexChanged(object sender, EventArgs e)
@@ -152,8 +152,12 @@ namespace _3d
             string c = dataGridView1.CurrentRow.Cells["允许登录"].Value.ToString();
             string d = dataGridView1.CurrentRow.Cells["用户权限"].Value.ToString();
             string e1 = dataGridView1.CurrentRow.Cells["用户备注"].Value.ToString();
-            if (a.Equals(""))
-                disableKongJian();
+
+            // 为空的暂时不做判断，以便错误账号也能进行后台管理
+            if (a.Equals("")) {
+                //disableKongJian();
+            }
+                
             this.label1.Text = "用户 " + a + " ";
             this.label2.Text = "当前" + b;
             this.label3.Text = "是否有权限登陆：";
@@ -273,7 +277,15 @@ namespace _3d
         {
             try
             {
-                string prov = provinceCbx.Text;
+               
+                string searchTag = this.searchInput.Text.Trim();
+                if (searchTag.Length > 0)
+                {
+                    searchUser();
+                    return;
+                }
+
+                    string prov = provinceCbx.Text;
                 string ol = onlineCbx.Text;
                 if (prov.Equals("显示全部"))
                 {
@@ -330,13 +342,16 @@ namespace _3d
         //选项卡一，按姓名搜索    开始
         private void searchUser()
         {
+            // 获取文本框的值
             string searchTag = this.searchInput.Text.Trim();
-            if (searchTag.Length == 0)
+            
+            // 如果存在录入信息则使用该where语句
+            string where = "";
+            if (searchTag.Length > 0)
             {
-                return;
+                where = "where (user_realname LIKE '%" + searchTag + "%' or user_name LIKE '%" + searchTag + "%')  and isdel='1'";
             }
 
-            string where = "where (user_realname LIKE '%" + searchTag + "%' or user_name LIKE '%" + searchTag + "%')  and isdel='1'";
             dgvGetInfoSqlExecute(where);
         }
 
@@ -612,7 +627,7 @@ namespace _3d
         }
         #endregion
 
-        #region 第二个选项卡
+        #region 第二个选项卡：添加用户
 
         //第二个选项卡中“添加用户”按钮的点击
         private void button3_Click(object sender, EventArgs e)
@@ -825,7 +840,7 @@ namespace _3d
 
         #endregion
 
-        #region 第三个选项卡
+        #region 第三个选项卡：公告设置
 
         //第三个选项卡中获取现有的公告信息
 
