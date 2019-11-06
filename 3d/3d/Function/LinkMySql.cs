@@ -70,17 +70,10 @@ namespace _3d.Function
         {
             try
             {
-                WebRequest wr = WebRequest.Create("http://eztx.eztx.cn/getIP.html");
+                WebRequest wr = WebRequest.Create("https://eztx.eztx.cn/getip.php");
                 Stream s = wr.GetResponse().GetResponseStream();
-                StreamReader sr = new StreamReader(s, Encoding.Default);
+                StreamReader sr = new StreamReader(s, Encoding.UTF8);
                 string all = sr.ReadToEnd(); //读取网站的数据
-
-                /*Regex r = new Regex("((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|[1-9])", RegexOptions.None);
-                Match mc = r.Match(all);
-                // 获取匹配到的IP
-                tempip = mc.Groups[0].Value;
-                sr.Close();
-                s.Close();*/
 
                 if (all != null && all.Trim().Length > 0) {
                     string[] IPinfos = all.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
