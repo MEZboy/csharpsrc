@@ -52,10 +52,11 @@ namespace AutoUpdate
 			//
 			InitializeComponent();
 
-			//
-			// TODO: 在 InitializeComponent 调用后添加任何构造函数代码
-			//
-		}
+            //
+            // TODO: 在 InitializeComponent 调用后添加任何构造函数代码
+            //
+            System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;// 设置该属性 为false这个问题属于跨线程问题
+        }
 
 		/// <summary>
 		/// 清理所有正在使用的资源。
@@ -73,259 +74,259 @@ namespace AutoUpdate
 		}
 
 		#region Windows 窗体设计器生成的代码
+
 		/// <summary>
-		/// 设计器支持所需的方法 - 不要使用代码编辑器修改
-		/// 此方法的内容。
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUpdate));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lvUpdateList = new System.Windows.Forms.ListView();
-            this.chFileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chVersion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chProgress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.pbDownFile = new System.Windows.Forms.ProgressBar();
-            this.lbState = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnFinish = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 240);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.lvUpdateList);
-            this.panel1.Controls.Add(this.pbDownFile);
-            this.panel1.Controls.Add(this.lbState);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(120, 8);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 240);
-            this.panel1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(8, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 16);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "以下为需要更新文件列表";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox2.Location = new System.Drawing.Point(0, 238);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 2);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // lvUpdateList
-            // 
-            this.lvUpdateList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.chFileName,
-            this.chVersion,
-            this.chProgress});
-            this.lvUpdateList.Location = new System.Drawing.Point(3, 48);
-            this.lvUpdateList.Name = "lvUpdateList";
-            this.lvUpdateList.Size = new System.Drawing.Size(272, 120);
-            this.lvUpdateList.TabIndex = 6;
-            this.lvUpdateList.UseCompatibleStateImageBehavior = false;
-            this.lvUpdateList.View = System.Windows.Forms.View.Details;
-            // 
-            // chFileName
-            // 
-            this.chFileName.Text = "组件名";
-            this.chFileName.Width = 123;
-            // 
-            // chVersion
-            // 
-            this.chVersion.Text = "版本号";
-            this.chVersion.Width = 98;
-            // 
-            // chProgress
-            // 
-            this.chProgress.Text = "进度";
-            this.chProgress.Width = 47;
-            // 
-            // pbDownFile
-            // 
-            this.pbDownFile.Location = new System.Drawing.Point(3, 200);
-            this.pbDownFile.Name = "pbDownFile";
-            this.pbDownFile.Size = new System.Drawing.Size(274, 17);
-            this.pbDownFile.TabIndex = 5;
-            // 
-            // lbState
-            // 
-            this.lbState.Location = new System.Drawing.Point(3, 176);
-            this.lbState.Name = "lbState";
-            this.lbState.Size = new System.Drawing.Size(240, 16);
-            this.lbState.TabIndex = 4;
-            this.lbState.Text = "点击“下一步”开始更新文件";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(0, 32);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(280, 8);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            // 
-            // btnNext
-            // 
-            this.btnNext.Location = new System.Drawing.Point(224, 264);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(80, 24);
-            this.btnNext.TabIndex = 3;
-            this.btnNext.Text = "下一步(&N)>";
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(312, 264);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(80, 24);
-            this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "取消(&C)";
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.linkLabel1);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.groupBox3);
-            this.panel2.Controls.Add(this.groupBox4);
-            this.panel2.Location = new System.Drawing.Point(8, 264);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(112, 24);
-            this.panel2.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(144, 184);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 16);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "恩泽天下";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.Location = new System.Drawing.Point(136, 208);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(128, 16);
-            this.linkLabel1.TabIndex = 12;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(24, 120);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(184, 16);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "欢迎以后继续关注我们的产品。";
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(24, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 48);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "     程序更新完成,如果程序更新期间被关闭,点击\"完成\"自动更新程序会自动重新启动系统。";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(6, 6);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "感谢您的使用";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox3.Location = new System.Drawing.Point(0, 22);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(112, 2);
-            this.groupBox3.TabIndex = 7;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox2";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Location = new System.Drawing.Point(0, 32);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(280, 8);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            // 
-            // btnFinish
-            // 
-            this.btnFinish.Location = new System.Drawing.Point(136, 264);
-            this.btnFinish.Name = "btnFinish";
-            this.btnFinish.Size = new System.Drawing.Size(80, 24);
-            this.btnFinish.TabIndex = 3;
-            this.btnFinish.Text = "完成(&F)";
-            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
-            // 
-            // FrmUpdate
-            // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
-            this.ClientSize = new System.Drawing.Size(424, 301);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnFinish);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "FrmUpdate";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "恩泽天下辅助运算软件更新程序";
-            this.Load += new System.EventHandler(this.FrmUpdate_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUpdate));
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.label1 = new System.Windows.Forms.Label();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.lvUpdateList = new System.Windows.Forms.ListView();
+			this.chFileName = new System.Windows.Forms.ColumnHeader();
+			this.chVersion = new System.Windows.Forms.ColumnHeader();
+			this.chProgress = new System.Windows.Forms.ColumnHeader();
+			this.pbDownFile = new System.Windows.Forms.ProgressBar();
+			this.lbState = new System.Windows.Forms.Label();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.btnNext = new System.Windows.Forms.Button();
+			this.btnCancel = new System.Windows.Forms.Button();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.label4 = new System.Windows.Forms.Label();
+			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.groupBox4 = new System.Windows.Forms.GroupBox();
+			this.btnFinish = new System.Windows.Forms.Button();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.panel1.SuspendLayout();
+			this.panel2.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(8, 8);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(96, 240);
+			this.pictureBox1.TabIndex = 1;
+			this.pictureBox1.TabStop = false;
+			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.label1);
+			this.panel1.Controls.Add(this.groupBox2);
+			this.panel1.Controls.Add(this.lvUpdateList);
+			this.panel1.Controls.Add(this.pbDownFile);
+			this.panel1.Controls.Add(this.lbState);
+			this.panel1.Controls.Add(this.groupBox1);
+			this.panel1.Location = new System.Drawing.Point(120, 8);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(280, 240);
+			this.panel1.TabIndex = 2;
+			// 
+			// label1
+			// 
+			this.label1.Location = new System.Drawing.Point(8, 13);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(144, 16);
+			this.label1.TabIndex = 9;
+			this.label1.Text = "以下为需要更新文件列表";
+			// 
+			// groupBox2
+			// 
+			this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.groupBox2.Location = new System.Drawing.Point(0, 238);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(280, 2);
+			this.groupBox2.TabIndex = 7;
+			this.groupBox2.TabStop = false;
+			this.groupBox2.Text = "groupBox2";
+			// 
+			// lvUpdateList
+			// 
+			this.lvUpdateList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { this.chFileName, this.chVersion, this.chProgress });
+			this.lvUpdateList.HideSelection = false;
+			this.lvUpdateList.Location = new System.Drawing.Point(3, 48);
+			this.lvUpdateList.Name = "lvUpdateList";
+			this.lvUpdateList.Size = new System.Drawing.Size(272, 120);
+			this.lvUpdateList.TabIndex = 6;
+			this.lvUpdateList.UseCompatibleStateImageBehavior = false;
+			this.lvUpdateList.View = System.Windows.Forms.View.Details;
+			// 
+			// chFileName
+			// 
+			this.chFileName.Text = "组件名";
+			this.chFileName.Width = 123;
+			// 
+			// chVersion
+			// 
+			this.chVersion.Text = "版本号";
+			this.chVersion.Width = 98;
+			// 
+			// chProgress
+			// 
+			this.chProgress.Text = "进度";
+			this.chProgress.Width = 47;
+			// 
+			// pbDownFile
+			// 
+			this.pbDownFile.Location = new System.Drawing.Point(3, 200);
+			this.pbDownFile.Name = "pbDownFile";
+			this.pbDownFile.Size = new System.Drawing.Size(274, 17);
+			this.pbDownFile.TabIndex = 5;
+			// 
+			// lbState
+			// 
+			this.lbState.Location = new System.Drawing.Point(3, 176);
+			this.lbState.Name = "lbState";
+			this.lbState.Size = new System.Drawing.Size(240, 16);
+			this.lbState.TabIndex = 4;
+			this.lbState.Text = "点击“下一步”开始更新文件";
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Location = new System.Drawing.Point(0, 32);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(280, 8);
+			this.groupBox1.TabIndex = 1;
+			this.groupBox1.TabStop = false;
+			// 
+			// btnNext
+			// 
+			this.btnNext.Location = new System.Drawing.Point(224, 264);
+			this.btnNext.Name = "btnNext";
+			this.btnNext.Size = new System.Drawing.Size(80, 24);
+			this.btnNext.TabIndex = 3;
+			this.btnNext.Text = "下一步(&N)>";
+			this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+			// 
+			// btnCancel
+			// 
+			this.btnCancel.Location = new System.Drawing.Point(312, 264);
+			this.btnCancel.Name = "btnCancel";
+			this.btnCancel.Size = new System.Drawing.Size(80, 24);
+			this.btnCancel.TabIndex = 4;
+			this.btnCancel.Text = "取消(&C)";
+			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+			// 
+			// panel2
+			// 
+			this.panel2.Controls.Add(this.label4);
+			this.panel2.Controls.Add(this.linkLabel1);
+			this.panel2.Controls.Add(this.label3);
+			this.panel2.Controls.Add(this.label2);
+			this.panel2.Controls.Add(this.label5);
+			this.panel2.Controls.Add(this.groupBox3);
+			this.panel2.Controls.Add(this.groupBox4);
+			this.panel2.Location = new System.Drawing.Point(8, 264);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(112, 24);
+			this.panel2.TabIndex = 5;
+			// 
+			// label4
+			// 
+			this.label4.Location = new System.Drawing.Point(144, 184);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(100, 16);
+			this.label4.TabIndex = 13;
+			this.label4.Text = "恩泽天下";
+			// 
+			// linkLabel1
+			// 
+			this.linkLabel1.Location = new System.Drawing.Point(136, 208);
+			this.linkLabel1.Name = "linkLabel1";
+			this.linkLabel1.Size = new System.Drawing.Size(128, 16);
+			this.linkLabel1.TabIndex = 12;
+			this.linkLabel1.TabStop = true;
+			this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+			// 
+			// label3
+			// 
+			this.label3.Location = new System.Drawing.Point(24, 120);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(184, 16);
+			this.label3.TabIndex = 11;
+			this.label3.Text = "欢迎以后继续关注我们的产品。";
+			// 
+			// label2
+			// 
+			this.label2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.label2.Location = new System.Drawing.Point(24, 64);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(232, 48);
+			this.label2.TabIndex = 10;
+			this.label2.Text = "     程序更新完成,如果程序更新期间被关闭,点击\"完成\"自动更新程序会自动重新启动系统。";
+			// 
+			// label5
+			// 
+			this.label5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.label5.Location = new System.Drawing.Point(6, 6);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(90, 13);
+			this.label5.TabIndex = 9;
+			this.label5.Text = "感谢您的使用";
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.groupBox3.Location = new System.Drawing.Point(0, 22);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(112, 2);
+			this.groupBox3.TabIndex = 7;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "groupBox2";
+			// 
+			// groupBox4
+			// 
+			this.groupBox4.Location = new System.Drawing.Point(0, 32);
+			this.groupBox4.Name = "groupBox4";
+			this.groupBox4.Size = new System.Drawing.Size(280, 8);
+			this.groupBox4.TabIndex = 1;
+			this.groupBox4.TabStop = false;
+			// 
+			// btnFinish
+			// 
+			this.btnFinish.Location = new System.Drawing.Point(136, 264);
+			this.btnFinish.Name = "btnFinish";
+			this.btnFinish.Size = new System.Drawing.Size(80, 24);
+			this.btnFinish.TabIndex = 3;
+			this.btnFinish.Text = "完成(&F)";
+			this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
+			// 
+			// FrmUpdate
+			// 
+			this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
+			this.ClientSize = new System.Drawing.Size(424, 301);
+			this.Controls.Add(this.panel2);
+			this.Controls.Add(this.btnCancel);
+			this.Controls.Add(this.btnNext);
+			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.btnFinish);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MaximizeBox = false;
+			this.Name = "FrmUpdate";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "恩泽天下辅助运算软件更新程序";
+			this.Load += new System.EventHandler(this.FrmUpdate_Load);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.panel1.ResumeLayout(false);
+			this.panel2.ResumeLayout(false);
+			this.ResumeLayout(false);
 		}
 		#endregion
 
 		private string updateUrl = string.Empty;
+		
+		// 下载文件的临时目录
 		private string tempUpdatePath = string.Empty;
 		XmlFiles updaterXmlFiles = null;
 		private int availableUpdate = 0;
@@ -371,21 +372,21 @@ namespace AutoUpdate
 			//与服务器连接,下载更新配置文件
 			try
 			{
-				tempUpdatePath = Environment.GetEnvironmentVariable("Temp") + "\\"+ "_"+ updaterXmlFiles.FindNode("//Application").Attributes["applicationId"].Value+"_"+"y"+"_"+"x"+"_"+"m"+"_"+"\\";
+				//tempUpdatePath = Environment.GetEnvironmentVariable("Temp") + "\\"+ "_"+ updaterXmlFiles.FindNode("//Application").Attributes["applicationId"].Value+"_"+"y"+"_"+"x"+"_"+"m"+"_"+"\\";
+				tempUpdatePath = Application.StartupPath + "\\update\\";
 				appUpdater.DownAutoUpdateFile(tempUpdatePath);
 			}
-			catch
+			catch(Exception ex)
 			{
-				MessageBox.Show("与服务器连接失败,操作超时!","提示",MessageBoxButtons.OK,MessageBoxIcon.Information);
+				MessageBox.Show(ex.Message);
 				this.Close();
 				return;
-
 			}
 
 			//获取更新文件列表
 			Hashtable htUpdateFile = new Hashtable();
 
-			serverXmlFile = tempUpdatePath + "\\UpdateList.xml";
+			serverXmlFile = tempUpdatePath + "UpdateList.xml";
 			if(!File.Exists(serverXmlFile))
 			{
 				return;
@@ -407,6 +408,8 @@ namespace AutoUpdate
 		private void btnCancel_Click(object sender, System.EventArgs e)
 		{
 			this.Close();
+			// 删除临时文件夹
+			System.IO.Directory.Delete(tempUpdatePath,true);
 			Application.ExitThread();
 			Application.Exit();
 		}
@@ -532,18 +535,27 @@ namespace AutoUpdate
 				Directory.CreateDirectory(objPath);
 			}
 
-            //修改文件名，取消后缀.png
+            //修改文件名，取消后缀.new
             string[] filesChange = Directory.GetFiles(sourcePath);
             for (int i = 0; i < filesChange.Length; i++)
             {
-                File.Move(filesChange[i], filesChange[i].Replace(".png",""));
+                File.Move(filesChange[i], filesChange[i].Replace(".new",""));
             }
 
             string[] files = Directory.GetFiles(sourcePath);
 			for(int i=0;i<files.Length;i++)
 			{
 				string[] childfile = files[i].Split('\\');
-				File.Copy(files[i],objPath + @"\" + childfile[childfile.Length-1],true);
+
+                // 文件名
+                string childFileName = childfile[childfile.Length - 1];
+                string currentExeName = Process.GetCurrentProcess().ProcessName;
+
+                // 如果更新列表中存在当前正在执行的程序，则先不复制
+                if (!childFileName.Contains(currentExeName))
+                {
+                    File.Copy(files[i], objPath + @"\" + childFileName, true);
+                }
 			}
 			string[] dirs = Directory.GetDirectories(sourcePath);
 			for(int i=0;i<dirs.Length;i++)
@@ -555,7 +567,7 @@ namespace AutoUpdate
 
 		private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
 		{
-			//打开亿万网首页
+			//打开网页
 			System.Diagnostics.Process.Start(linkLabel1.Text);
 		}
 		//点击完成复制更新文件到应用程序目录

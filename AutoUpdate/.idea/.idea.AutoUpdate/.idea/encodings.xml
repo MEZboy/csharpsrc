@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
+    <file url="file://$PROJECT_DIR$/AppUpdater.cs" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/AssemblyInfo.cs" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/FrmUpdate.cs" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/IniFiles.cs" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/XmlFiles.cs" charset="GB2312" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

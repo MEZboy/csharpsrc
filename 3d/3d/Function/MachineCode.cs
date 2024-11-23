@@ -173,83 +173,83 @@ namespace _3d
         }
 
         //取网卡mac
-        public string GetMacAddress()
-        {
-            try
-            {
-                string mac = "";
-                string command = "ipconfig /all";
+        //public string GetMacAddress()
+        //{
+        //    try
+        //    {
+        //        string mac = "";
+        //        string command = "ipconfig /all";
 
-                Process p = new Process();
+        //        Process p = new Process();
 
-                //Process类有一个StartInfo属性，这个是ProcessStartInfo类，包括了一些属性和方法，下面我们用到了他的几个属性：
+        //        //Process类有一个StartInfo属性，这个是ProcessStartInfo类，包括了一些属性和方法，下面我们用到了他的几个属性：
 
-                p.StartInfo.FileName = "cmd.exe";           //设定程序名
-                p.StartInfo.Arguments = "/c " + command;    //设定程式执行参数
-                p.StartInfo.UseShellExecute = false;        //关闭Shell的使用
-                p.StartInfo.RedirectStandardInput = true;   //重定向标准输入
-                p.StartInfo.RedirectStandardOutput = true;  //重定向标准输出
-                p.StartInfo.RedirectStandardError = true;   //重定向错误输出
-                p.StartInfo.CreateNoWindow = true;          //设置不显示窗口
+        //        p.StartInfo.FileName = "cmd.exe";           //设定程序名
+        //        p.StartInfo.Arguments = "/c " + command;    //设定程式执行参数
+        //        p.StartInfo.UseShellExecute = false;        //关闭Shell的使用
+        //        p.StartInfo.RedirectStandardInput = true;   //重定向标准输入
+        //        p.StartInfo.RedirectStandardOutput = true;  //重定向标准输出
+        //        p.StartInfo.RedirectStandardError = true;   //重定向错误输出
+        //        p.StartInfo.CreateNoWindow = true;          //设置不显示窗口
 
-                p.Start();   //启动
-                mac = p.StandardOutput.ReadToEnd();
-                p.Close();  //关闭
+        //        p.Start();   //启动
+        //        mac = p.StandardOutput.ReadToEnd();
+        //        p.Close();  //关闭
 
-                string word1 = "以太网适配器 本地连接:";
-                string word2 = "Ethernet adapter 本地连接:";
+        //        string word1 = "以太网适配器 本地连接:";
+        //        string word2 = "Ethernet adapter 本地连接:";
 
-                if (mac.IndexOf(word1) >= 0)
-                {
-                    mac = mac.Substring(mac.IndexOf(word1), mac.Length - mac.IndexOf(word1) - 1).Trim();
-                    mac = mac.Substring(mac.IndexOf("物理地址"), mac.IndexOf("DHCP") - mac.IndexOf("物理地址")).Trim();
-                    mac = mac.Substring(mac.Length - 17, mac.Length - (mac.Length - 17)).Trim();
-                    return mac.Replace("-", "").Trim();
-                }
+        //        if (mac.IndexOf(word1) >= 0)
+        //        {
+        //            mac = mac.Substring(mac.IndexOf(word1), mac.Length - mac.IndexOf(word1) - 1).Trim();
+        //            mac = mac.Substring(mac.IndexOf("物理地址"), mac.IndexOf("DHCP") - mac.IndexOf("物理地址")).Trim();
+        //            mac = mac.Substring(mac.Length - 17, mac.Length - (mac.Length - 17)).Trim();
+        //            return mac.Replace("-", "").Trim();
+        //        }
 
-                if (mac.IndexOf(word2) >= 0)
-                {
-                    mac = mac.Substring(mac.IndexOf(word2), mac.Length - mac.IndexOf(word2) - 1).Trim();
-                    mac = mac.Substring(mac.IndexOf("Physical Address"), mac.IndexOf("Dhcp") - mac.IndexOf("Physical Address")).Trim();
-                    mac = mac.Substring(mac.Length - 17, mac.Length - (mac.Length - 17)).Trim();
-                    return mac.Replace("-", "").Trim();
-                }
+        //        if (mac.IndexOf(word2) >= 0)
+        //        {
+        //            mac = mac.Substring(mac.IndexOf(word2), mac.Length - mac.IndexOf(word2) - 1).Trim();
+        //            mac = mac.Substring(mac.IndexOf("Physical Address"), mac.IndexOf("Dhcp") - mac.IndexOf("Physical Address")).Trim();
+        //            mac = mac.Substring(mac.Length - 17, mac.Length - (mac.Length - 17)).Trim();
+        //            return mac.Replace("-", "").Trim();
+        //        }
 
-                mac = mac.Substring(mac.IndexOf("无线局域网适配器 无线网络连接:"), mac.Length - mac.IndexOf("无线局域网适配器 无线网络连接:") - 1).Trim();
-                mac = mac.Substring(mac.IndexOf("物理地址"), mac.IndexOf("DHCP") - mac.IndexOf("物理地址")).Trim();
-                mac = mac.Substring(mac.Length - 17, mac.Length - (mac.Length - 17)).Trim();
+        //        mac = mac.Substring(mac.IndexOf("无线局域网适配器 无线网络连接:"), mac.Length - mac.IndexOf("无线局域网适配器 无线网络连接:") - 1).Trim();
+        //        mac = mac.Substring(mac.IndexOf("物理地址"), mac.IndexOf("DHCP") - mac.IndexOf("物理地址")).Trim();
+        //        mac = mac.Substring(mac.Length - 17, mac.Length - (mac.Length - 17)).Trim();
 
-                return mac.Replace("-", "").Trim();
-            }
-            catch
-            {
-                string ip = "";
-                string mac = "";
-                ManagementClass mc;
-                string hostInfo = Dns.GetHostName();
-                //IP地址  
-                //System.Net.IPAddress[] addressList = Dns.GetHostByName(Dns.GetHostName()).AddressList;这个过时  
-                System.Net.IPAddress[] addressList = Dns.GetHostEntry(Dns.GetHostName()).AddressList;
-                for (int i = 0; i < addressList.Length; i++)
-                {
-                    ip = addressList[i].ToString();
-                }
-                //mac地址  
-                mc = new ManagementClass("Win32_NetworkAdapterConfiguration");
-                ManagementObjectCollection moc = mc.GetInstances();
-                foreach (ManagementObject mo in moc)
-                {
-                    if (mo["IPEnabled"].ToString() == "True")
-                    {
-                        mac = mo["MacAddress"].ToString();
-                    }
-                }
-                //输出  
-                string outPutStr = "IP:{0},\n MAC地址:{1}";
-                outPutStr = string.Format(outPutStr, ip, mac);
+        //        return mac.Replace("-", "").Trim();
+        //    }
+        //    catch
+        //    {
+        //        string ip = "";
+        //        string mac = "";
+        //        ManagementClass mc;
+        //        string hostInfo = Dns.GetHostName();
+        //        //IP地址  
+        //        //System.Net.IPAddress[] addressList = Dns.GetHostByName(Dns.GetHostName()).AddressList;这个过时  
+        //        System.Net.IPAddress[] addressList = Dns.GetHostEntry(Dns.GetHostName()).AddressList;
+        //        for (int i = 0; i < addressList.Length; i++)
+        //        {
+        //            ip = addressList[i].ToString();
+        //        }
+        //        //mac地址  
+        //        mc = new ManagementClass("Win32_NetworkAdapterConfiguration");
+        //        ManagementObjectCollection moc = mc.GetInstances();
+        //        foreach (ManagementObject mo in moc)
+        //        {
+        //            if (mo["IPEnabled"].ToString() == "True")
+        //            {
+        //                mac = mo["MacAddress"].ToString();
+        //            }
+        //        }
+        //        //输出  
+        //        string outPutStr = "IP:{0},\n MAC地址:{1}";
+        //        outPutStr = string.Format(outPutStr, ip, mac);
 
-                return mac.Replace(":", "").Trim();
-            }
-        }
+        //        return mac.Replace(":", "").Trim();
+        //    }
+        //}
     }
 }

@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Data;
 using System.Windows.Forms;
 using System.IO;
 using System.Xml;
 using System.Net;
-using System.Text.RegularExpressions;
 
 using MySql.Data.MySqlClient;
 
@@ -57,6 +54,23 @@ namespace _3d.Function
             xml.Load(localXmlFile);
             XmlNode xn = xml.SelectSingleNode("//Files/File");
             Global.version = xn.Attributes["Ver"].InnerText;
+
+            // 自动更新的临时目录
+            XmlNode xnApplicationId = xml.SelectSingleNode("//Application");
+            string tempUpdatePath = Environment.GetEnvironmentVariable("Temp") + "\\" + "_" + xnApplicationId.Attributes["applicationId"].Value + "_" + "y" + "_" + "x" + "_" + "m" + "_" + "\\";
+            // 获取更新程序，粘贴过来
+            string sourceAutoUpdateExe = tempUpdatePath + "AutoUpdate.exe";
+            if (File.Exists(sourceAutoUpdateExe))
+            {
+                File.Copy(sourceAutoUpdateExe, Application.StartupPath + "\\AutoUpdate.exe", true);
+            }
+
+            // 如果更新缓存目录为空，则删除目录
+            DirectoryInfo folder = new DirectoryInfo(tempUpdatePath);
+            if (folder.Exists)
+            {
+                folder.Delete(true);
+            }
 
             // 获取IP地址和归属地
             getWebIPNew();
@@ -153,6 +167,7 @@ namespace _3d.Function
             //conn = new MySqlConnection("Server=qdm137219194.my3w.com;User Id=qdm137219194;Password=mez199023;Persist Security Info=True;Database=qdm137219194_db;Port=3306;CharSet=utf8");
             
             conn.Append("Server=" + Global.sqlAddress);
+            // conn.Append("Server=47.93.89.75");
             conn.Append(";User Id=" + Global.sqlUsername);
             conn.Append(";Password=" + Global.sqlPwd);
             conn.Append(";Persist Security Info=True;Database=" + Global.sqlDB);
@@ -196,28 +211,25 @@ namespace _3d.Function
         /// <returns></returns>
         public static DataTable MySqlQuery(string SQLString)
         {
-            MySqlConnection conn = new MySqlConnection(connStr());
-            MySqlCommand comm = new MySqlCommand();
-            comm.Connection = conn;
-            conn.Open();
             DataTable dt = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter();
+            string connectionString = connStr();
+
             try
             {
-                comm.CommandType = CommandType.Text;
-                comm.CommandText = SQLString;
-                da.SelectCommand = comm;
-                da.Fill(dt);
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                using (MySqlCommand comm = new MySqlCommand(SQLString, conn))
+                using (MySqlDataAdapter da = new MySqlDataAdapter(comm))
+                {
+                    conn.Open();
+                    da.Fill(dt);
+                }
             }
             catch (Exception e)
             {
-                string path = Application.StartupPath + "\\ezLogs.log";
-                Tools.writeFile(path,e.Message);
+                string path = Path.Combine(Application.StartupPath, "ezLogs.log");
+                Tools.writeFile(path, e.Message);
             }
-            finally
-            {
-                conn.Close();
-            }
+
             return dt;
         }
     }

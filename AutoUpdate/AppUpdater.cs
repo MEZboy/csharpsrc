@@ -191,15 +191,53 @@ namespace AutoUpdate
 			}
 			return k;
 		}
-		/// <summary>
-		/// 返回下载更新文件的临时目录
-		/// </summary>
-		/// <returns></returns>
-		public void DownAutoUpdateFile(string downpath)
+
+        /// <summary>
+        /// 删除目录下所有文件
+        /// </summary>
+        /// <param name="dir"></param>
+        public static void DeleteFolder(string dir)
+        {
+            foreach (string d in Directory.GetFileSystemEntries(dir))
+            {
+                if (File.Exists(d))
+                {
+                    FileInfo fi = new FileInfo(d);
+                    if (fi.Attributes.ToString().IndexOf("ReadOnly") != -1)
+                        fi.Attributes = FileAttributes.Normal;
+                    File.Delete(d);//直接删除其中的文件  
+                }
+                else
+                {
+                    DirectoryInfo d1 = new DirectoryInfo(d);
+                    if (d1.GetFiles().Length != 0)
+                    {
+                        DeleteFolder(d1.FullName);////递归删除子文件夹
+                    }
+                    Directory.Delete(d);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 返回下载更新文件的临时目录
+        /// </summary>
+        /// <returns></returns>
+        public void DownAutoUpdateFile(string downpath)
 		{
-			if(!System.IO.Directory.Exists(downpath))
-				System.IO.Directory.CreateDirectory(downpath);
-			string serverXmlFile = downpath+@"/UpdateList.xml";
+            if (!System.IO.Directory.Exists(downpath))
+	            try
+	            {
+		            System.IO.Directory.CreateDirectory(downpath);
+	            }
+	            catch (UnauthorizedAccessException ex)
+	            {
+		            MessageBox.Show("权限不足: " + ex.Message + "\n请以管理员的形式打开更新程序后再试", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+	            }
+            else
+                DeleteFolder(downpath);
+
+            string serverXmlFile = downpath+@"/UpdateList.xml";
 
 			try
 			{

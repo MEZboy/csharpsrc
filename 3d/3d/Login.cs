@@ -340,8 +340,8 @@ namespace _3d
                 disabledControls();
                 clearControls();
                 string d = mc.GetCpuID();
-                string g = mc.GetMacAddress();
-                string machinecode = d + g;
+                //string g = mc.GetMacAddress();
+                string machinecode = d;
                 for (int i = 4; i < machinecode.Length; i += 5)
                 {
                     machinecode = machinecode.Insert(i, "-");
@@ -491,19 +491,41 @@ namespace _3d
         //标题菜单下拉的“获取机器码”点击
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            //string a = mc.GetCpuInfo();
-            string b = mc.GetHDid();
-            //string c = mc.GetMoAddress();
             string d = mc.GetCpuID();
-            //string ee = mc.GetHardDiskID();
-            //string f = mc.GetHostName();
-            string g = mc.GetMacAddress();
-            string machinecode = d + g;
+            string machinecode = d;
             for (int i = 4; i < machinecode.Length; i += 5)
                 machinecode = machinecode.Insert(i, "-");
 
-            Clipboard.SetText(machinecode);//复制到剪切板
-            MessageBox.Show("本机机器码为：" + machinecode + "\t\r已经帮您复制，您可以直接在别处粘贴", "机器码", MessageBoxButtons.OK);
+            bool success = false;
+            int retryCount = 5;
+            int delay = 100; // 毫秒
+
+            for (int i = 0; i < retryCount; i++)
+            {
+                try
+                {
+                    Clipboard.SetText(machinecode, TextDataFormat.Text); // 复制到剪贴板
+                    MessageBox.Show("机器码是: " + machinecode + "\n已复制到剪贴板。", "机器码", MessageBoxButtons.OK);
+                    success = true;
+                    break;
+                }
+                catch (ExternalException ex)
+                {
+                    if (i == retryCount - 1)
+                    {
+                        MessageBox.Show("复制到剪贴板失败: " + ex.Message + "\n请稍后重试。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        Thread.Sleep(delay);
+                    }
+                }
+            }
+
+            if (!success)
+            {
+                MessageBox.Show("您没有执行此操作的权限。", "权限被拒绝", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void 清空登录信息ToolStripMenuItem_Click(object sender, EventArgs e)

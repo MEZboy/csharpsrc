@@ -8,7 +8,7 @@ using System.Drawing;
 namespace _3d.Function
 {
     /// <summary>
-    /// ÓÃÓÚÁ´½ÓÔ¶³Ì·şÎñÆ÷,²¢»ñÈ¡ĞÅÏ¢
+    /// ç”¨äºé“¾æ¥è¿œç¨‹æœåŠ¡å™¨,å¹¶è·å–ä¿¡æ¯
     /// </summary>
     public class WebConnect
     {

@@ -29,8 +29,8 @@ namespace _3d
             string d = mc.GetCpuID();
             //string ee = mc.GetHardDiskID();
             //string f = mc.GetHostName();
-            string g = mc.GetMacAddress();
-            string machinecode = d + g;
+            //string g = mc.GetMacAddress();
+            string machinecode = d;
             for (int i = 4; i < machinecode.Length; i += 5)
                 machinecode = machinecode.Insert(i, "-");
             textBox8.Text = machinecode;

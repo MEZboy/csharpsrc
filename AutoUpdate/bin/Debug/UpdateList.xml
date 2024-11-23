@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="gb2312"?>
 <AutoUpdater>
-  <description>恩泽天下软件更新系统</description>
+  <description>鎭╂辰澶╀笅杞欢鏇存柊绯荤粺</description>
   <Updater>
-	<Url>http://eztx.eztx.cn/other_soft/</Url>
-	<LastUpdateTime>2015-04-11</LastUpdateTime>
+	<Url>https://eztx.eztx.cn/other_soft/</Url>
+	<LastUpdateTime>2024-11-23</LastUpdateTime>
   </Updater>
   <Application applicationId="ItemSoft">
     <EntryPoint>3d.exe</EntryPoint>
     <Location>.</Location>
-	<Version>1.0</Version>
+	<Version>11.3</Version>
   </Application>
   <Files>
-	   <File Ver="9.9" Name="3d.exe.png" />
+	   <File Ver="11.3.0" Name="3d.exe" />
+	   <File Ver="1.0" Name="AutoUpdate.exe" />
 	   <File Ver="4.7" Name="MEZboy.CustomTabControl.dll" />
-	   <File Ver="6.9.6.0" Name="MySql.Data.dll" />
+	   <File Ver="9.1.1.0" Name="MySql.Data.dll" />
 	   <File Ver="1.0" Name="HtmlAgilityPack.dll" />
 	   <File Ver="1.0" Name="numGroups.mdb" />
   </Files>
